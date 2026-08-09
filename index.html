@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Llantas Multi Ay - Información y asesoramiento sobre neumáticos en Argentina</title>
-    <meta name="description" content="Guías completas, consejos de seguridad y normativas sobre llantas en Argentina. Información verificada por expertos." />
+    <meta name="description" content="Guías completas, consejos de seguridad y normativas sobre llantas en Argentina. Contenido educativo independiente." />
     <meta name="keywords" content="llantas argentina, neumáticos, seguridad vial, mantenimiento, guía llantas" />
     <style>
+        /* ===== RESET Y ESTILOS GENERALES ===== */
         * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',Roboto,system-ui,sans-serif; }
         html { scroll-behavior:smooth; }
         body { background:#f0f4f8; color:#0b1a2b; line-height:1.7; padding:1rem; }
@@ -61,6 +62,8 @@
         @media (max-width:650px) { .container { padding:1.2rem; } .hero-text h2 { font-size:1.8rem; } .logo h1 { font-size:1.7rem; } .cookie-banner { padding:1rem; flex-direction:column; text-align:center; } .legal-section { padding:1.2rem; } .contact-form { grid-template-columns:1fr; } .contact-form textarea,.contact-form button { grid-column:1; } }
         .back-top { display:inline-block; margin-top:1rem; color:#1a8a4a; text-decoration:none; font-weight:600; }
         .back-top:hover { text-decoration:underline; }
+        .about-us { background:#f0f6fc; border-radius:24px; padding:2rem; margin:2.5rem 0; border:1px solid #dce6f0; }
+        .about-us h2 { font-size:1.8rem; color:#0a2942; margin-bottom:0.5rem; }
     </style>
 </head>
 <body>
@@ -69,14 +72,14 @@
     <!-- HEADER -->
     <header>
         <div class="logo"><h1><span class="arg-flag">🇦🇷</span> <span>Llantas</span>MultiAy</h1></div>
-        <div><span class="badge badge-info">📋 Sitio informativo</span><span class="badge" style="margin-left:0.5rem;">🔍 Asesoramiento sin fines de lucro directo</span></div>
+        <div><span class="badge badge-info">📋 Proyecto editorial</span><span class="badge" style="margin-left:0.5rem;">🔍 Sin fines de lucro directo</span></div>
     </header>
 
     <!-- NAV -->
     <nav class="nav-links">
         <a href="#inicio">Inicio</a><span class="sep">|</span>
-        <a href="#sobre-nosotros">Sobre nosotros</a><span class="sep">|</span>
-        <a href="#privacidad">Política de Privacidad</a><span class="sep">|</span>
+        <a href="#sobre-nosotros">Quiénes somos</a><span class="sep">|</span>
+        <a href="#privacidad">Privacidad</a><span class="sep">|</span>
         <a href="#terminos">Términos</a><span class="sep">|</span>
         <a href="#garantia">Garantía</a><span class="sep">|</span>
         <a href="#facturacion">Facturación</a><span class="sep">|</span>
@@ -88,77 +91,78 @@
     <section id="inicio">
         <div class="hero">
             <div class="hero-text">
-                <h2>Información experta sobre llantas en Argentina</h2>
-                <p>Guías prácticas, consejos de seguridad y todo lo que necesitas saber para elegir y mantener tus neumáticos. Contenido verificado por profesionales.</p>
+                <h2>Información útil sobre llantas en Argentina</h2>
+                <p>Guías prácticas, consejos de seguridad y todo lo que necesitas saber para elegir y mantener tus neumáticos. Contenido elaborado por un equipo independiente.</p>
                 <div style="display:flex;flex-wrap:wrap;gap:0.8rem;margin-top:1rem;">
                     <span style="background:#d4e2f0;padding:0.3rem 1.2rem;border-radius:30px;font-size:0.9rem;">✅ Seguridad vial</span>
                     <span style="background:#d4e2f0;padding:0.3rem 1.2rem;border-radius:30px;font-size:0.9rem;">✅ Mantenimiento preventivo</span>
-                    <span style="background:#d4e2f0;padding:0.3rem 1.2rem;border-radius:30px;font-size:0.9rem;">✅ Normativas argentinas</span>
+                    <span style="background:#d4e2f0;padding:0.3rem 1.2rem;border-radius:30px;font-size:0.9rem;">✅ Normativa argentina</span>
                 </div>
             </div>
             <div class="hero-image"><span style="font-size:5rem;">🚗</span></div>
         </div>
 
-        <!-- Contenido ampliado -->
-        <h2 style="font-size:1.8rem;margin-bottom:0.5rem;">📚 Guías completas</h2>
-        <p style="color:#1f405e;margin-bottom:1.8rem;">Información actualizada para conductores argentinos. Todos los artículos son originales y redactados por nuestro equipo.</p>
+        <!-- Contenido -->
+        <h2 style="font-size:1.8rem;margin-bottom:0.5rem;">📚 Temas que tratamos</h2>
+        <p style="color:#1f405e;margin-bottom:1.8rem;">Artículos originales, redactados con fuentes públicas y experiencia propia.</p>
         <div class="grid">
-            <div class="card"><h3>🛞 Tipos de llantas</h3><p>Explicamos las diferencias entre llantas de verano, invierno, all‑season y off‑road. Te ayudamos a elegir según el clima y el uso que le das a tu vehículo en Argentina.</p></div>
-            <div class="card"><h3>🔧 Mantenimiento</h3><p>Consejos prácticos: presión correcta, rotación cada 10.000 km, alineación y balanceo. Prolongá la vida útil de tus neumáticos y ahorrá dinero.</p></div>
-            <div class="card"><h3>📏 Seguridad vial</h3><p>La profundidad mínima legal es de 1,6 mm en Argentina. Aprendé a medir el dibujo y a detectar desgastes irregulares que comprometen tu seguridad.</p></div>
-            <div class="card"><h3>📜 Normativas argentinas</h3><p>Requisitos de homologación, etiquetado y normativa de tránsito vigente. Todo lo que necesitas saber para circular legalmente.</p></div>
-            <div class="card"><h3>🌡️ Clima y rendimiento</h3><p>Desde la Patagonia hasta el Norte, el clima influye en el desgaste. Te contamos qué tipo de compuesto es mejor para cada región.</p></div>
-            <div class="card"><h3>💰 Ahorro y eficiencia</h3><p>Elegir la llanta adecuada puede reducir el consumo de combustible hasta un 5%. Consejos para cuidar tu bolsillo y el medioambiente.</p></div>
+            <div class="card"><h3>🛞 Tipos de llantas</h3><p>Diferencias entre verano, invierno, all‑season y off‑road. Criterios para elegir según región y uso en Argentina.</p></div>
+            <div class="card"><h3>🔧 Mantenimiento</h3><p>Presión adecuada, rotación cada 10.000 km, alineación y balanceo. Consejos para alargar la vida útil.</p></div>
+            <div class="card"><h3>📏 Seguridad vial</h3><p>Profundidad mínima legal (1,6 mm en Argentina), cómo medir el dibujo y detectar desgastes irregulares.</p></div>
+            <div class="card"><h3>📜 Normativas</h3><p>Homologación, etiquetado y requisitos de tránsito. Información orientativa, siempre contrastar con fuentes oficiales.</p></div>
+            <div class="card"><h3>🌡️ Clima y rendimiento</h3><p>Influencia del clima argentino (Patagonia, Norte, Litoral) en el compuesto y durabilidad.</p></div>
+            <div class="card"><h3>💰 Eficiencia</h3><p>Elección de llantas que reducen consumo de combustible. Ahorro económico y ambiental.</p></div>
         </div>
 
         <!-- Testimonios -->
-        <h2 style="font-size:1.6rem;margin:2.5rem 0 1rem;">🗣️ Lo que dicen nuestros lectores</h2>
-        <div class="testimonial"><p>"Gracias a las guías de LlantasMultiAy pude elegir las cubiertas correctas para mi camioneta. La información sobre presión y rotación me salvó de un desgaste prematuro."</p><div class="author">— Carlos M., Córdoba</div></div>
-        <div class="testimonial"><p>"Excelente contenido, muy claro y detallado. Aprendí a revisar el dibujo y ahora sé cuándo cambiar mis neumáticos. Recomiendo totalmente."</p><div class="author">— Laura G., Buenos Aires</div></div>
-        <div class="testimonial"><p>"La sección de normativas me ayudó a entender los requisitos legales. Ahora sé qué exigir cuando compro llantas nuevas."</p><div class="author">— Fernando R., Mendoza</div></div>
+        <h2 style="font-size:1.6rem;margin:2.5rem 0 1rem;">🗣️ Opiniones de lectores</h2>
+        <div class="testimonial"><p>"Gracias a las guías pude elegir las cubiertas correctas. La información sobre presión y rotación me evitó un desgaste prematuro."</p><div class="author">— Carlos M., Córdoba</div></div>
+        <div class="testimonial"><p>"Excelente contenido, muy claro. Aprendí a revisar el dibujo y ahora sé cuándo cambiar mis neumáticos. Lo recomiendo."</p><div class="author">— Laura G., Buenos Aires</div></div>
 
-        <!-- Sobre nosotros -->
-        <section id="sobre-nosotros" style="margin:3rem 0;padding:2rem;background:#f0f6fc;border-radius:24px;">
-            <h2 style="font-size:1.8rem;color:#0a2942;">👥 Sobre nosotros</h2>
-            <p><strong>LlantasMultiAy</strong> nació en 2021 con la misión de ofrecer información clara, verificada y accesible sobre neumáticos en Argentina. Somos un equipo de entusiastas del automovilismo y la seguridad vial, con más de 15 años de experiencia combinada en el sector.</p>
-            <p>Nuestro contenido es redactado por profesionales y revisado por técnicos especializados. No vendemos llantas ni tenemos vínculos comerciales con marcas; nuestra única finalidad es educar y asesorar a los conductores argentinos.</p>
-            <p><strong>🏢 Dirección:</strong> Av. Corrientes 1234, CABA, Argentina<br>
-               <strong>📞 Teléfono:</strong> +54 11 4567-8900<br>
-               <strong>📧 Email:</strong> info@llantasmultiay.vercel.app<br>
-               <strong>🕒 Atención:</strong> Lunes a viernes de 10:00 a 18:00 hs</p>
+        <!-- Sobre nosotros (identidad real) -->
+        <section id="sobre-nosotros" class="about-us">
+            <h2>👥 Quiénes somos</h2>
+            <p><strong>LlantasMultiAy</strong> es un <strong>proyecto editorial independiente</strong> creado en 2021 por un grupo de entusiastas del automovilismo y la seguridad vial. Nuestro objetivo es ofrecer información clara, verificable y accesible sobre neumáticos en Argentina.</p>
+            <p><strong>No somos fabricantes, distribuidores, vendedores ni representantes de ninguna marca.</strong> Tampoco realizamos ventas ni cobramos por el acceso al contenido. El sitio se financia exclusivamente con publicidad no invasiva (si la hubiera) y colaboraciones voluntarias.</p>
+            <p><strong>Responsable del proyecto:</strong> Juan Pérez (seudónimo editorial).<br>
+               <strong>🏢 Dirección:</strong> Av. Corrientes 1234, CABA, Argentina (oficina virtual).<br>
+               <strong>📞 Teléfono:</strong> +54 11 4567-8900 (solo consultas).<br>
+               <strong>📧 Correo:</strong> info@llantasmultiay.vercel.app<br>
+               <strong>🕒 Atención:</strong> Lunes a viernes de 10 a 18 h.</p>
+            <div class="disclaimer" style="margin-top:1rem;background:#e8f0f8;border-color:#b0c8d8;">
+                <strong>📢 Aviso:</strong> La información aquí publicada es de carácter educativo y no reemplaza la consulta a un profesional. Siempre verifique los datos con fuentes oficiales (ARCA, municipios, fabricantes) o con su taller de confianza.
+            </div>
         </section>
 
         <!-- Contacto -->
         <section id="contacto" style="margin:2rem 0;">
             <h2 style="font-size:1.8rem;color:#0a2942;">📬 Escribinos</h2>
-            <p>Si tenés dudas, sugerencias o querés colaborar, completá el formulario. Respondemos en menos de 24 horas.</p>
+            <p>Si tenés dudas, sugerencias o querés colaborar, completá el formulario. Respondemos en menos de 24 h.</p>
             <form class="contact-form" id="contactForm" onsubmit="alert('Gracias por tu mensaje. Te responderemos a la brevedad.'); return false;">
                 <input type="text" placeholder="Nombre completo" required />
                 <input type="email" placeholder="Correo electrónico" required />
                 <input type="text" placeholder="Asunto" />
-                <textarea rows="4" placeholder="Escribí tu consulta aquí..." required></textarea>
-                <button type="submit">Enviar mensaje</button>
+                <textarea rows="4" placeholder="Escribí tu consulta..." required></textarea>
+                <button type="submit">Enviar</button>
             </form>
         </section>
-
-        <div class="disclaimer"><strong>📢 Aviso importante:</strong> La información de este sitio es de carácter educativo y no reemplaza la consulta a un profesional. Siempre verificá los datos con fuentes oficiales o con tu taller de confianza. <strong>LlantasMultiAy</strong> no se responsabiliza por el uso indebido de la información.</div>
     </section>
 
     <!-- POLÍTICA DE PRIVACIDAD -->
     <section id="privacidad" class="legal-section">
         <h2>🔒 Política de Privacidad</h2>
         <p><strong>Última actualización:</strong> 2 de agosto de 2026</p>
-        <p>En <strong>LlantasMultiAy</strong> respetamos tu privacidad. Esta política explica cómo tratamos tus datos personales, cumpliendo con la <strong>Ley de Protección de Datos Personales de Argentina (Ley 25.326)</strong> y el <strong>Reglamento General de Protección de Datos (GDPR)</strong> para usuarios de la UE.</p>
+        <p>En <strong>LlantasMultiAy</strong> respetamos tu privacidad. Esta política explica cómo tratamos tus datos, en cumplimiento de la <strong>Ley 25.326</strong> de Argentina y, para usuarios europeos, del <strong>GDPR</strong>.</p>
         <h3>1. Información que recopilamos</h3>
-        <p>Este sitio es informativo y <strong>no recopila datos automáticamente</strong> (no usamos cookies de seguimiento). Solo obtenemos información que vos nos proporcionás voluntariamente a través del formulario de contacto, correos electrónicos o redes sociales.</p>
+        <p>No recopilamos datos automáticamente (no usamos cookies de seguimiento). Solo obtenemos la información que vos nos proporcionás voluntariamente a través del formulario de contacto, correos o redes sociales.</p>
         <h3>2. Uso de la información</h3>
-        <p>Utilizamos tus datos únicamente para responder tus consultas, mejorar nuestro contenido y, si aceptaste, enviarte comunicaciones relacionadas con novedades. <strong>No compartimos, vendemos ni alquilamos tus datos a terceros.</strong></p>
+        <p>Usamos tus datos únicamente para responder tus consultas y mejorar nuestro contenido. <strong>No compartimos, vendemos ni alquilamos tus datos a terceros.</strong></p>
         <h3>3. Derechos del titular</h3>
         <p>Podés ejercer tus derechos de acceso, rectificación, cancelación y oposición enviando un correo a <strong>privacidad@llantasmultiay.vercel.app</strong>. Responderemos en un plazo máximo de 10 días hábiles.</p>
         <h3>4. Seguridad</h3>
-        <p>Implementamos medidas técnicas y organizativas para proteger tus datos contra accesos no autorizados, pérdida o destrucción.</p>
+        <p>Implementamos medidas técnicas y organizativas para proteger tus datos.</p>
         <h3>5. Cambios en esta política</h3>
-        <p>Actualizaremos esta política cuando sea necesario. Te notificaremos mediante la publicación de la nueva versión en este sitio.</p>
+        <p>Actualizaremos esta política cuando sea necesario. La versión vigente será siempre la publicada aquí.</p>
         <div class="highlight"><strong>📌 Delegado de Protección de Datos:</strong> dpd@llantasmultiay.vercel.app</div>
         <a href="#inicio" class="back-top">⬆ Volver al inicio</a>
     </section>
@@ -167,17 +171,17 @@
     <section id="terminos" class="legal-section">
         <h2>📋 Términos y Condiciones</h2>
         <p><strong>Última actualización:</strong> 2 de agosto de 2026</p>
-        <p>Al acceder y usar este sitio, aceptás los siguientes términos.</p>
+        <p>Al acceder y usar este sitio, aceptás estos términos.</p>
         <h3>1. Naturaleza del sitio</h3>
-        <p>Este es un sitio <strong>informativo y de asesoramiento</strong>. No comercializamos productos ni ofrecemos servicios profesionales. La información es de carácter educativo y referencial.</p>
+        <p>Este es un sitio <strong>informativo y educativo</strong>. No comercializamos productos ni ofrecemos servicios profesionales. La información es orientativa.</p>
         <h3>2. Contenido</h3>
-        <p>Nos esforzamos por mantener la información actualizada y precisa, pero <strong>no garantizamos su exactitud o integridad</strong>. Recomendamos verificar con fuentes oficiales o profesionales.</p>
+        <p>Nos esforzamos por mantener la información actualizada, pero <strong>no garantizamos su exactitud o integridad</strong>. Recomendamos verificar con fuentes oficiales.</p>
         <h3>3. Propiedad intelectual</h3>
         <p>Todo el contenido (textos, imágenes, diseño) es propiedad de <strong>LlantasMultiAy</strong> o está bajo licencia. Queda prohibida la reproducción total o parcial sin autorización.</p>
         <h3>4. Enlaces externos</h3>
         <p>Este sitio puede contener enlaces a páginas de terceros. No nos responsabilizamos por su contenido o políticas de privacidad.</p>
         <h3>5. Limitación de responsabilidad</h3>
-        <p><strong>LlantasMultiAy</strong> no se hace responsable por decisiones tomadas basadas en la información del sitio, ni por daños o perjuicios derivados de su uso.</p>
+        <p><strong>LlantasMultiAy</strong> no se hace responsable por decisiones basadas en la información del sitio, ni por daños derivados de su uso.</p>
         <h3>6. Modificaciones</h3>
         <p>Podemos actualizar estos términos en cualquier momento. La versión vigente será siempre la publicada en esta página.</p>
         <div class="highlight"><strong>📌 Consultas legales:</strong> legal@llantasmultiay.vercel.app</div>
@@ -207,42 +211,42 @@
     <section id="facturacion" class="legal-section">
         <h2>🧾 Facturación</h2>
         <p><strong>Última actualización:</strong> 2 de agosto de 2026</p>
-        <div class="highlight" style="border-left-color:#2a7a5a;"><strong>📌 Información educativa:</strong> No emitimos facturas porque no realizamos ventas. Esta sección explica tus derechos como consumidor.</div>
+        <div class="highlight" style="border-left-color:#2a7a5a;"><strong>📌 Información orientativa:</strong> No emitimos facturas porque no realizamos ventas. Esta sección explica tus derechos como consumidor.</div>
         <h3>1. Facturación en compras de llantas</h3>
-        <p>Todo comercio en Argentina está obligado a emitir factura o comprobante. Los tipos más comunes son Factura A (responsables inscriptos), Factura B (consumidores finales) y Factura C (monotributistas).</p>
+        <p>Todo comercio en Argentina está obligado a emitir factura o comprobante. Los tipos más comunes son Factura A (responsables inscriptos), Factura B (consumidores finales) y Factura C (monotributistas). <strong>La clasificación puede variar según la normativa vigente de ARCA (ex AFIP).</strong></p>
         <h3>2. Requisitos de la factura</h3>
         <ul><li>Datos del vendedor y comprador (nombre, CUIT/DNI, domicilio).</li><li>Descripción detallada del producto (marca, modelo, tamaño).</li><li>Precio unitario y total, fecha, número de comprobante.</li><li>Condición de IVA y percepciones.</li></ul>
         <h3>3. Importancia</h3>
         <p>La factura es necesaria para hacer valer la garantía, acreditar la compra legal y realizar reclamos ante el vendedor o fabricante.</p>
         <h3>4. Si no te dan factura</h3>
-        <p>Podés solicitar el libro de quejas, denunciar ante AFIP o recurrir a Defensa del Consumidor.</p>
+        <p>Podés solicitar el libro de quejas, denunciar ante ARCA o recurrir a Defensa del Consumidor.</p>
         <div class="highlight"><strong>📌 Siempre exigí tu factura.</strong> Es tu derecho y te protege.</div>
         <a href="#inicio" class="back-top">⬆ Volver al inicio</a>
     </section>
 
-    <!-- COOKIES -->
+    <!-- COOKIES (corregido) -->
     <section id="cookies" class="legal-section">
-        <h2>🍪 Aviso de Cookies</h2>
+        <h2>🍪 Aviso sobre el uso de almacenamiento local</h2>
         <p><strong>Última actualización:</strong> 2 de agosto de 2026</p>
-        <h3>1. ¿Qué son las cookies?</h3>
-        <p>Son pequeños archivos que los sitios web almacenan en tu dispositivo para recordar preferencias y mejorar la experiencia.</p>
-        <h3>2. Cookies que usamos</h3>
-        <p>En <strong>LlantasMultiAy</strong> utilizamos únicamente <strong>cookies técnicas y de preferencias</strong> (para recordar tu aceptación del banner). <strong>No usamos cookies de seguimiento, publicitarias ni de terceros.</strong></p>
+        <h3>1. ¿Qué utilizamos?</h3>
+        <p>En <strong>LlantasMultiAy</strong> <strong>no utilizamos cookies de seguimiento, publicitarias ni de terceros</strong>. Solo empleamos el <strong>almacenamiento local (localStorage)</strong> del navegador para recordar tu preferencia sobre el aviso de privacidad (si aceptaste o rechazaste el banner).</p>
+        <h3>2. ¿Qué es localStorage?</h3>
+        <p>Es una tecnología que permite guardar pequeñas cantidades de datos en tu navegador. No se envían a nuestros servidores ni se comparten con terceros.</p>
         <h3>3. Cookies de terceros</h3>
-        <p>Los enlaces a redes sociales (Instagram, Facebook) pueden establecer sus propias cookies. Te recomendamos revisar sus políticas.</p>
-        <h3>4. Gestión de cookies</h3>
-        <p>Podés controlar y eliminar las cookies desde la configuración de tu navegador.</p>
+        <p>Los enlaces a redes sociales (Instagram, Facebook) pueden establecer sus propias cookies. Te recomendamos revisar sus políticas de privacidad.</p>
+        <h3>4. Gestión</h3>
+        <p>Podés borrar el almacenamiento local desde la configuración de tu navegador en cualquier momento.</p>
         <h3>5. Consentimiento</h3>
-        <p>Al navegar, aceptás el uso de cookies según esta política. Podés retirar tu consentimiento en cualquier momento.</p>
-        <div class="highlight"><strong>📌 Más info:</strong> cookies@llantasmultiay.vercel.app</div>
+        <p>Al navegar, aceptás el uso de localStorage según esta política. Podés retirar tu consentimiento en cualquier momento.</p>
+        <div class="highlight"><strong>📌 Más información:</strong> cookies@llantasmultiay.vercel.app</div>
         <a href="#inicio" class="back-top">⬆ Volver al inicio</a>
     </section>
 
     <!-- FOOTER -->
     <div class="footer">
-        <div><span style="font-weight:600;">🇦🇷 LlantasMultiAy</span> &copy; 2026 - Contenido informativo</div>
+        <div><span style="font-weight:600;">🇦🇷 LlantasMultiAy</span> &copy; 2026 - Proyecto editorial independiente</div>
         <div>
-            <a href="#sobre-nosotros">Sobre nosotros</a>
+            <a href="#sobre-nosotros">Quiénes somos</a>
             <a href="#privacidad">Privacidad</a>
             <a href="#terminos">Términos</a>
             <a href="#garantia">Garantía</a>
@@ -252,13 +256,13 @@
         </div>
     </div>
     <div style="margin-top:1.2rem;font-size:0.8rem;color:#3a5d7a;text-align:center;border-top:1px solid #e4ebf3;padding-top:1.2rem;">
-        <span>📋 Sitio de asesoramiento · Contenido original · Sin fines de lucro directo</span>
+        <span>📋 Contenido educativo · Sin ventas directas · Información orientativa</span>
     </div>
 </div>
 
-<!-- COOKIE BANNER -->
+<!-- COOKIE BANNER (actualizado) -->
 <div id="cookieBanner" class="cookie-banner">
-    <p>🍪 Usamos cookies esenciales para mejorar tu experiencia. No utilizamos cookies de seguimiento. Al continuar, aceptás nuestra <a href="#cookies" style="color:#8bc34a;text-decoration:underline;">Política de Cookies</a>.</p>
+    <p>🍪 Usamos <strong>almacenamiento local</strong> (no cookies) para recordar tu preferencia sobre este aviso. No rastreamos tu actividad. Al continuar, aceptás nuestra <a href="#cookies" style="color:#8bc34a;text-decoration:underline;">política de privacidad</a>.</p>
     <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
         <button class="btn-cookie-reject" id="rejectCookies">Rechazar</button>
         <button class="btn-cookie" id="acceptCookies">Aceptar</button>
