@@ -1,292 +1,319 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Llantas Multi Ay - Información y asesoramiento sobre neumáticos en Argentina</title>
-    <meta name="description" content="Guías completas, consejos de seguridad y normativas sobre llantas en Argentina. Contenido educativo independiente." />
-    <meta name="keywords" content="llantas argentina, neumáticos, seguridad vial, mantenimiento, guía llantas" />
-    <style>
-        /* ===== RESET Y ESTILOS GENERALES ===== */
-        * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',Roboto,system-ui,sans-serif; }
-        html { scroll-behavior:smooth; }
-        body { background:#f0f4f8; color:#0b1a2b; line-height:1.7; padding:1rem; }
-        .container { max-width:1200px; margin:0 auto; background:#fff; border-radius:32px; box-shadow:0 20px 60px rgba(0,0,0,0.06); padding:2rem 2rem 3rem; }
-        header { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; border-bottom:2px solid #eef2f6; padding-bottom:1.5rem; margin-bottom:2rem; }
-        .logo h1 { font-size:2.2rem; font-weight:700; letter-spacing:-0.5px; color:#0a2942; }
-        .logo span { color:#1a8a4a; }
-        .logo .arg-flag { font-size:1.8rem; margin-right:6px; }
-        .badge { font-size:0.85rem; color:#1a4a6e; background:#e3edf7; padding:0.4rem 1.2rem; border-radius:40px; font-weight:500; }
-        .badge-info { background:#d4e8f0; color:#0a3a5a; }
-        .nav-links { display:flex; flex-wrap:wrap; gap:0.5rem 1.2rem; margin:1rem 0 1.5rem; padding:0.8rem 1.2rem; background:#f8fafc; border-radius:40px; border:1px solid #e5ecf3; }
-        .nav-links a { color:#1a4a72; text-decoration:none; font-weight:500; font-size:0.95rem; transition:0.2s; }
-        .nav-links a:hover { color:#0a2a4a; text-decoration:underline; }
-        .nav-links .sep { color:#c0d0e0; }
-        .hero { display:flex; flex-wrap:wrap; gap:2rem; margin:1.5rem 0 3rem; background:linear-gradient(135deg,#e8f0f8 0%,#ffffff 100%); padding:2rem; border-radius:28px; }
-        .hero-text { flex:1 1 300px; }
-        .hero-text h2 { font-size:2.4rem; font-weight:700; line-height:1.2; color:#0b2a44; }
-        .hero-text p { font-size:1.15rem; color:#1e3b55; margin:1.2rem 0 1.8rem; }
-        .hero-image { flex:1 1 260px; background:#dce6f0; border-radius:24px; display:flex; align-items:center; justify-content:center; font-size:4.5rem; min-height:180px; color:#2a4b6e; background-image:radial-gradient(circle at 20% 30%,#f0f6fe 0%,#d1dfec 100%); }
-        .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:2rem; margin:3rem 0; }
-        .card { background:#f9fcff; padding:1.8rem 1.5rem; border-radius:24px; border:1px solid #e5ecf3; transition:0.15s; }
-        .card:hover { border-color:#cbdae7; background:#fff; box-shadow:0 8px 24px rgba(0,0,0,0.02); }
-        .card h3 { font-size:1.5rem; margin-bottom:0.7rem; color:#0b2942; }
-        .card p { color:#1f3d5a; }
-        .legal-section { background:#f9fcff; border-radius:24px; padding:2rem 2rem; margin:2.5rem 0; border:1px solid #e5ecf3; scroll-margin-top:20px; }
-        .legal-section h2 { font-size:1.8rem; color:#0a2942; margin-bottom:0.5rem; display:flex; align-items:center; gap:10px; }
-        .legal-section h3 { font-size:1.2rem; color:#1a4a72; margin:1.2rem 0 0.5rem; }
-        .legal-section p,.legal-section li { color:#1f3d5a; margin-bottom:0.6rem; }
-        .legal-section ul { padding-left:1.8rem; margin:0.5rem 0 1rem; }
-        .legal-section .highlight { background:#eef5fb; padding:0.8rem 1.2rem; border-radius:12px; border-left:4px solid #1a8a4a; margin:1rem 0; }
-        .info-box { background:#eef5fb; border-radius:16px; padding:1.5rem 2rem; margin:2rem 0; border-left:4px solid #1a8a4a; }
-        .info-box h3 { color:#0a2942; margin-bottom:0.5rem; }
-        .testimonial { background:#f8fafc; border-radius:16px; padding:1.5rem; margin:1.5rem 0; border:1px solid #e0e8f0; }
-        .testimonial p { font-style:italic; color:#1a3a5a; }
-        .testimonial .author { font-weight:600; color:#0a2942; margin-top:0.5rem; }
-        .contact-form { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin:1.5rem 0; }
-        .contact-form input,.contact-form textarea { padding:0.8rem; border:1px solid #cbdae7; border-radius:12px; font-size:1rem; width:100%; }
-        .contact-form textarea { grid-column:1/3; resize:vertical; }
-        .contact-form button { grid-column:1/3; padding:0.8rem; background:#1a8a4a; color:#fff; border:none; border-radius:40px; font-weight:600; font-size:1rem; cursor:pointer; transition:0.2s; }
-        .contact-form button:hover { background:#14733d; }
-        .disclaimer { background:#f8f4e8; border-radius:16px; padding:1.2rem 1.8rem; margin:2rem 0 1rem; border:1px solid #e8e0cc; font-size:0.95rem; color:#4a3f2a; }
-        .disclaimer strong { color:#2a3f1a; }
-        .footer { margin-top:3.5rem; padding-top:2rem; border-top:2px solid #eef2f6; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:1.5rem; font-size:0.95rem; color:#2b4c6b; }
-        .footer a { color:#1f4a72; text-decoration:none; font-weight:500; margin:0 0.6rem 0 0; }
-        .footer a:hover { text-decoration:underline; }
-        .cookie-banner { position:fixed; bottom:0; left:0; right:0; background:#0a1a2a; color:#eef5fb; padding:1.2rem 2rem; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1rem; z-index:999; box-shadow:0 -4px 20px rgba(0,0,0,0.2); border-top:3px solid #1a8a4a; }
-        .cookie-banner p { flex:1; min-width:200px; font-size:0.95rem; margin:0; }
-        .cookie-banner .btn-cookie { background:#1a8a4a; color:#fff; border:none; padding:0.6rem 1.8rem; border-radius:40px; font-weight:600; cursor:pointer; transition:0.2s; font-size:0.95rem; }
-        .cookie-banner .btn-cookie:hover { background:#14733d; }
-        .cookie-banner .btn-cookie-reject { background:transparent; color:#aac0d0; border:1px solid #3a5a7a; padding:0.6rem 1.8rem; border-radius:40px; font-weight:500; cursor:pointer; transition:0.2s; font-size:0.95rem; }
-        .cookie-banner .btn-cookie-reject:hover { background:rgba(255,255,255,0.05); }
-        @media (max-width:650px) { .container { padding:1.2rem; } .hero-text h2 { font-size:1.8rem; } .logo h1 { font-size:1.7rem; } .cookie-banner { padding:1rem; flex-direction:column; text-align:center; } .legal-section { padding:1.2rem; } .contact-form { grid-template-columns:1fr; } .contact-form textarea,.contact-form button { grid-column:1; } }
-        .back-top { display:inline-block; margin-top:1rem; color:#1a8a4a; text-decoration:none; font-weight:600; }
-        .back-top:hover { text-decoration:underline; }
-        .about-us { background:#f0f6fc; border-radius:24px; padding:2rem; margin:2.5rem 0; border:1px solid #dce6f0; }
-        .about-us h2 { font-size:1.8rem; color:#0a2942; margin-bottom:0.5rem; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Llantas Multi Colombia | Información sobre llantas y seguridad vial</title>
+<meta name="description" content="Sitio informativo sobre llantas, neumáticos, mantenimiento y seguridad vial en Colombia. Guías y recomendaciones de carácter educativo.">
+<meta name="keywords" content="llantas Colombia, neumáticos Colombia, seguridad vial, mantenimiento de llantas, consejos para conductores">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Roboto,system-ui,sans-serif}
+html{scroll-behavior:smooth}
+body{background:#f0f4f8;color:#102033;line-height:1.7;padding:1rem}
+.container{max-width:1200px;margin:0 auto;background:#fff;border-radius:32px;box-shadow:0 20px 60px rgba(0,0,0,.06);padding:2rem 2rem 3rem}
+
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;border-bottom:2px solid #eef2f6;padding-bottom:1.5rem;margin-bottom:2rem}
+.logo h1{font-size:2.2rem;font-weight:700;letter-spacing:-.5px;color:#102d48}
+.logo span{color:#c62828}
+.logo .co-flag{font-size:1.8rem;margin-right:6px}
+.badge{font-size:.85rem;color:#17486a;background:#e3edf7;padding:.4rem 1.2rem;border-radius:40px;font-weight:500;display:inline-block}
+.badge-info{background:#fff1cf;color:#775400}
+
+.nav-links{display:flex;flex-wrap:wrap;gap:.5rem 1.2rem;margin:1rem 0 1.5rem;padding:.8rem 1.2rem;background:#f8fafc;border-radius:40px;border:1px solid #e5ecf3}
+.nav-links a{color:#174b72;text-decoration:none;font-weight:500;font-size:.95rem}
+.nav-links a:hover{text-decoration:underline;color:#0b2942}
+.nav-links .sep{color:#c0d0e0}
+
+.hero{display:flex;flex-wrap:wrap;gap:2rem;margin:1.5rem 0 3rem;background:linear-gradient(135deg,#fff4d6 0%,#fff 48%,#eaf5ff 100%);padding:2rem;border-radius:28px}
+.hero-text{flex:1 1 300px}
+.hero-text h2{font-size:2.4rem;font-weight:700;line-height:1.2;color:#102d48}
+.hero-text p{font-size:1.15rem;color:#29465f;margin:1.2rem 0 1.8rem}
+.pills{display:flex;flex-wrap:wrap;gap:.8rem}
+.pill{background:#fff0c7;padding:.3rem 1.2rem;border-radius:30px;font-size:.9rem;border:1px solid #f0ddb0}
+.hero-image{flex:1 1 260px;min-height:190px;border-radius:24px;display:flex;align-items:center;justify-content:center;font-size:5rem;background:linear-gradient(145deg,#dbeeff,#fff1c8);border:1px solid #dbe5ef}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem;margin:3rem 0}
+.card{background:#f9fcff;padding:1.8rem 1.5rem;border-radius:24px;border:1px solid #e5ecf3;transition:.15s}
+.card:hover{background:#fff;box-shadow:0 8px 24px rgba(0,0,0,.04);transform:translateY(-1px)}
+.card h3{font-size:1.35rem;margin-bottom:.7rem;color:#102d48}
+.card p{color:#29465f}
+
+.info-box{background:#eef7ff;border-radius:16px;padding:1.5rem 2rem;margin:2rem 0;border-left:4px solid #d39b00}
+.info-box h3{color:#102d48;margin-bottom:.5rem}
+.disclaimer{background:#fff8e8;border-radius:16px;padding:1.2rem 1.8rem;margin:2rem 0 1rem;border:1px solid #eadfbf;font-size:.95rem;color:#55482d}
+.disclaimer strong{color:#3f5c20}
+
+.legal-section{background:#f9fcff;border-radius:24px;padding:2rem;margin:2.5rem 0;border:1px solid #e5ecf3;scroll-margin-top:20px}
+.legal-section h2{font-size:1.8rem;color:#102d48;margin-bottom:.5rem;display:flex;align-items:center;gap:10px}
+.legal-section h3{font-size:1.2rem;color:#174b72;margin:1.2rem 0 .5rem}
+.legal-section p,.legal-section li{color:#29465f;margin-bottom:.6rem}
+.legal-section ul{padding-left:1.8rem;margin:.5rem 0 1rem}
+.highlight{background:#eef7ff;padding:.8rem 1.2rem;border-radius:12px;border-left:4px solid #d39b00;margin:1rem 0}
+
+.footer{margin-top:3.5rem;padding-top:2rem;border-top:2px solid #eef2f6;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1.5rem;font-size:.95rem;color:#2b4c6b}
+.footer a{color:#174b72;text-decoration:none;font-weight:500;margin-right:.8rem}
+.footer a:hover{text-decoration:underline}
+
+.cookie-banner{position:fixed;bottom:0;left:0;right:0;background:#102033;color:#eef5fb;padding:1.2rem 2rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;z-index:999;box-shadow:0 -4px 20px rgba(0,0,0,.2);border-top:3px solid #d39b00}
+.cookie-banner p{flex:1;min-width:220px;font-size:.95rem;margin:0}
+.cookie-banner a{color:#ffd75a}
+.btn-cookie,.btn-cookie-reject{padding:.6rem 1.8rem;border-radius:40px;font-weight:600;cursor:pointer;font-size:.95rem}
+.btn-cookie{background:#d39b00;color:#17202b;border:0}
+.btn-cookie-reject{background:transparent;color:#aac0d0;border:1px solid #3a5a7a}
+
+.back-top{display:inline-block;margin-top:1rem;color:#b07b00;text-decoration:none;font-weight:600}
+
+@media(max-width:650px){
+ body{padding:.5rem}
+ .container{padding:1.2rem;border-radius:22px}
+ .hero-text h2{font-size:1.8rem}
+ .logo h1{font-size:1.7rem}
+ .nav-links{border-radius:20px}
+ .legal-section{padding:1.2rem}
+ .cookie-banner{padding:1rem;flex-direction:column;text-align:center}
+ .hero-image{min-height:150px}
+}
+</style>
 </head>
+
 <body>
 <div class="container">
 
-    <!-- HEADER -->
-    <header>
-        <div class="logo"><h1><span class="arg-flag">🇦🇷</span> <span>Llantas</span>MultiAy</h1></div>
-        <div><span class="badge badge-info">📋 Proyecto editorial</span><span class="badge" style="margin-left:0.5rem;">🔍 Sin fines de lucro directo</span></div>
-    </header>
+<header>
+  <div class="logo">
+    <h1><span class="co-flag">🇨🇴</span><span>Llantas</span>Multi Colombia</h1>
+  </div>
+  <div>
+    <span class="badge badge-info">📋 Sitio informativo</span>
+    <span class="badge" style="margin-left:.5rem">🔎 Sin fines comerciales</span>
+  </div>
+</header>
 
-    <!-- NAV -->
-    <nav class="nav-links">
-        <a href="#inicio">Inicio</a><span class="sep">|</span>
-        <a href="#sobre-nosotros">Quiénes somos</a><span class="sep">|</span>
-        <a href="#privacidad">Privacidad</a><span class="sep">|</span>
-        <a href="#terminos">Términos</a><span class="sep">|</span>
-        <a href="#garantia">Garantía</a><span class="sep">|</span>
-        <a href="#facturacion">Facturación</a><span class="sep">|</span>
-        <a href="#cookies">Cookies</a><span class="sep">|</span>
-        <a href="#contacto">Contacto</a>
-    </nav>
+<nav class="nav-links">
+  <a href="#inicio">Inicio</a><span class="sep">|</span>
+  <a href="#privacidad">Política de Privacidad</a><span class="sep">|</span>
+  <a href="#terminos">Términos y Condiciones</a><span class="sep">|</span>
+  <a href="#garantia">Garantía</a><span class="sep">|</span>
+  <a href="#facturacion">Facturación</a><span class="sep">|</span>
+  <a href="#cookies">Cookies</a>
+</nav>
 
-    <!-- INICIO -->
-    <section id="inicio">
-        <div class="hero">
-            <div class="hero-text">
-                <h2>Información útil sobre llantas en Argentina</h2>
-                <p>Guías prácticas, consejos de seguridad y todo lo que necesitas saber para elegir y mantener tus neumáticos. Contenido elaborado por un equipo independiente.</p>
-                <div style="display:flex;flex-wrap:wrap;gap:0.8rem;margin-top:1rem;">
-                    <span style="background:#d4e2f0;padding:0.3rem 1.2rem;border-radius:30px;font-size:0.9rem;">✅ Seguridad vial</span>
-                    <span style="background:#d4e2f0;padding:0.3rem 1.2rem;border-radius:30px;font-size:0.9rem;">✅ Mantenimiento preventivo</span>
-                    <span style="background:#d4e2f0;padding:0.3rem 1.2rem;border-radius:30px;font-size:0.9rem;">✅ Normativa argentina</span>
-                </div>
-            </div>
-            <div class="hero-image"><span style="font-size:5rem;">🚗</span></div>
-        </div>
-
-        <!-- Contenido -->
-        <h2 style="font-size:1.8rem;margin-bottom:0.5rem;">📚 Temas que tratamos</h2>
-        <p style="color:#1f405e;margin-bottom:1.8rem;">Artículos originales, redactados con fuentes públicas y experiencia propia.</p>
-        <div class="grid">
-            <div class="card"><h3>🛞 Tipos de llantas</h3><p>Diferencias entre verano, invierno, all‑season y off‑road. Criterios para elegir según región y uso en Argentina.</p></div>
-            <div class="card"><h3>🔧 Mantenimiento</h3><p>Presión adecuada, rotación cada 10.000 km, alineación y balanceo. Consejos para alargar la vida útil.</p></div>
-            <div class="card"><h3>📏 Seguridad vial</h3><p>Profundidad mínima legal (1,6 mm en Argentina), cómo medir el dibujo y detectar desgastes irregulares.</p></div>
-            <div class="card"><h3>📜 Normativas</h3><p>Homologación, etiquetado y requisitos de tránsito. Información orientativa, siempre contrastar con fuentes oficiales.</p></div>
-            <div class="card"><h3>🌡️ Clima y rendimiento</h3><p>Influencia del clima argentino (Patagonia, Norte, Litoral) en el compuesto y durabilidad.</p></div>
-            <div class="card"><h3>💰 Eficiencia</h3><p>Elección de llantas que reducen consumo de combustible. Ahorro económico y ambiental.</p></div>
-        </div>
-
-        <!-- Testimonios -->
-        <h2 style="font-size:1.6rem;margin:2.5rem 0 1rem;">🗣️ Opiniones de lectores</h2>
-        <div class="testimonial"><p>"Gracias a las guías pude elegir las cubiertas correctas. La información sobre presión y rotación me evitó un desgaste prematuro."</p><div class="author">— Carlos M., Córdoba</div></div>
-        <div class="testimonial"><p>"Excelente contenido, muy claro. Aprendí a revisar el dibujo y ahora sé cuándo cambiar mis neumáticos. Lo recomiendo."</p><div class="author">— Laura G., Buenos Aires</div></div>
-
-        <!-- Sobre nosotros (identidad real) -->
-        <section id="sobre-nosotros" class="about-us">
-            <h2>👥 Quiénes somos</h2>
-            <p><strong>LlantasMultiAy</strong> es un <strong>proyecto editorial independiente</strong> creado en 2021 por un grupo de entusiastas del automovilismo y la seguridad vial. Nuestro objetivo es ofrecer información clara, verificable y accesible sobre neumáticos en Argentina.</p>
-            <p><strong>No somos fabricantes, distribuidores, vendedores ni representantes de ninguna marca.</strong> Tampoco realizamos ventas ni cobramos por el acceso al contenido. El sitio se financia exclusivamente con publicidad no invasiva (si la hubiera) y colaboraciones voluntarias.</p>
-            <p><strong>Responsable del proyecto:</strong> Juan Pérez (seudónimo editorial).<br>
-               <strong>🏢 Dirección:</strong> Av. Corrientes 1234, CABA, Argentina (oficina virtual).<br>
-               <strong>📞 Teléfono:</strong> +54 11 4567-8900 (solo consultas).<br>
-               <strong>📧 Correo:</strong> info@llantasmultiay.vercel.app<br>
-               <strong>🕒 Atención:</strong> Lunes a viernes de 10 a 18 h.</p>
-            <div class="disclaimer" style="margin-top:1rem;background:#e8f0f8;border-color:#b0c8d8;">
-                <strong>📢 Aviso:</strong> La información aquí publicada es de carácter educativo y no reemplaza la consulta a un profesional. Siempre verifique los datos con fuentes oficiales (ARCA, municipios, fabricantes) o con su taller de confianza.
-            </div>
-        </section>
-
-        <!-- Contacto -->
-        <section id="contacto" style="margin:2rem 0;">
-            <h2 style="font-size:1.8rem;color:#0a2942;">📬 Escribinos</h2>
-            <p>Si tenés dudas, sugerencias o querés colaborar, completá el formulario. Respondemos en menos de 24 h.</p>
-            <form class="contact-form" id="contactForm" onsubmit="alert('Gracias por tu mensaje. Te responderemos a la brevedad.'); return false;">
-                <input type="text" placeholder="Nombre completo" required />
-                <input type="email" placeholder="Correo electrónico" required />
-                <input type="text" placeholder="Asunto" />
-                <textarea rows="4" placeholder="Escribí tu consulta..." required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </section>
-
-    <!-- POLÍTICA DE PRIVACIDAD -->
-    <section id="privacidad" class="legal-section">
-        <h2>🔒 Política de Privacidad</h2>
-        <p><strong>Última actualización:</strong> 2 de agosto de 2026</p>
-        <p>En <strong>LlantasMultiAy</strong> respetamos tu privacidad. Esta política explica cómo tratamos tus datos, en cumplimiento de la <strong>Ley 25.326</strong> de Argentina y, para usuarios europeos, del <strong>GDPR</strong>.</p>
-        <h3>1. Información que recopilamos</h3>
-        <p>No recopilamos datos automáticamente (no usamos cookies de seguimiento). Solo obtenemos la información que vos nos proporcionás voluntariamente a través del formulario de contacto, correos o redes sociales.</p>
-        <h3>2. Uso de la información</h3>
-        <p>Usamos tus datos únicamente para responder tus consultas y mejorar nuestro contenido. <strong>No compartimos, vendemos ni alquilamos tus datos a terceros.</strong></p>
-        <h3>3. Derechos del titular</h3>
-        <p>Podés ejercer tus derechos de acceso, rectificación, cancelación y oposición enviando un correo a <strong>privacidad@llantasmultiay.vercel.app</strong>. Responderemos en un plazo máximo de 10 días hábiles.</p>
-        <h3>4. Seguridad</h3>
-        <p>Implementamos medidas técnicas y organizativas para proteger tus datos.</p>
-        <h3>5. Cambios en esta política</h3>
-        <p>Actualizaremos esta política cuando sea necesario. La versión vigente será siempre la publicada aquí.</p>
-        <div class="highlight"><strong>📌 Delegado de Protección de Datos:</strong> dpd@llantasmultiay.vercel.app</div>
-        <a href="#inicio" class="back-top">⬆ Volver al inicio</a>
-    </section>
-
-    <!-- TÉRMINOS Y CONDICIONES -->
-    <section id="terminos" class="legal-section">
-        <h2>📋 Términos y Condiciones</h2>
-        <p><strong>Última actualización:</strong> 2 de agosto de 2026</p>
-        <p>Al acceder y usar este sitio, aceptás estos términos.</p>
-        <h3>1. Naturaleza del sitio</h3>
-        <p>Este es un sitio <strong>informativo y educativo</strong>. No comercializamos productos ni ofrecemos servicios profesionales. La información es orientativa.</p>
-        <h3>2. Contenido</h3>
-        <p>Nos esforzamos por mantener la información actualizada, pero <strong>no garantizamos su exactitud o integridad</strong>. Recomendamos verificar con fuentes oficiales.</p>
-        <h3>3. Propiedad intelectual</h3>
-        <p>Todo el contenido (textos, imágenes, diseño) es propiedad de <strong>LlantasMultiAy</strong> o está bajo licencia. Queda prohibida la reproducción total o parcial sin autorización.</p>
-        <h3>4. Enlaces externos</h3>
-        <p>Este sitio puede contener enlaces a páginas de terceros. No nos responsabilizamos por su contenido o políticas de privacidad.</p>
-        <h3>5. Limitación de responsabilidad</h3>
-        <p><strong>LlantasMultiAy</strong> no se hace responsable por decisiones basadas en la información del sitio, ni por daños derivados de su uso.</p>
-        <h3>6. Modificaciones</h3>
-        <p>Podemos actualizar estos términos en cualquier momento. La versión vigente será siempre la publicada en esta página.</p>
-        <div class="highlight"><strong>📌 Consultas legales:</strong> legal@llantasmultiay.vercel.app</div>
-        <a href="#inicio" class="back-top">⬆ Volver al inicio</a>
-    </section>
-
-    <!-- GARANTÍA -->
-    <section id="garantia" class="legal-section">
-        <h2>🛡️ Garantía</h2>
-        <p><strong>Última actualización:</strong> 2 de agosto de 2026</p>
-        <div class="highlight" style="border-left-color:#e67e22;"><strong>📌 Importante:</strong> No vendemos llantas. La siguiente información es orientativa sobre las garantías que ofrecen los fabricantes en Argentina.</div>
-        <h3>1. Garantía del fabricante</h3>
-        <p>Las llantas comercializadas en Argentina suelen tener garantía de <strong>3 a 5 años</strong> contra defectos de fabricación, y en algunos casos por kilómetros recorridos. El reemplazo es proporcional al desgaste.</p>
-        <h3>2. ¿Qué cubre?</h3>
-        <ul><li>Defectos de materiales o mano de obra.</li><li>Separación de capas o burbujas.</li><li>Desgaste irregular por defecto de fábrica.</li></ul>
-        <h3>3. ¿Qué NO cubre?</h3>
-        <ul><li>Daños por uso indebido (baches, clavos, accidentes).</li><li>Desgaste normal.</li><li>Instalación incorrecta o desbalanceo.</li></ul>
-        <h3>4. Procedimiento</h3>
-        <p>Contactá al vendedor con la factura y el comprobante de instalación. El vendedor gestionará el reclamo ante el fabricante.</p>
-        <h3>5. Plazos legales</h3>
-        <p>La <strong>Ley 24.240</strong> garantiza un mínimo de <strong>6 meses</strong> para bienes muebles no consumibles. Los fabricantes suelen ofrecer plazos mayores.</p>
-        <div class="highlight"><strong>📌 Consejo:</strong> Guardá siempre la factura. Es esencial para cualquier reclamo.</div>
-        <a href="#inicio" class="back-top">⬆ Volver al inicio</a>
-    </section>
-
-    <!-- FACTURACIÓN -->
-    <section id="facturacion" class="legal-section">
-        <h2>🧾 Facturación</h2>
-        <p><strong>Última actualización:</strong> 2 de agosto de 2026</p>
-        <div class="highlight" style="border-left-color:#2a7a5a;"><strong>📌 Información orientativa:</strong> No emitimos facturas porque no realizamos ventas. Esta sección explica tus derechos como consumidor.</div>
-        <h3>1. Facturación en compras de llantas</h3>
-        <p>Todo comercio en Argentina está obligado a emitir factura o comprobante. Los tipos más comunes son Factura A (responsables inscriptos), Factura B (consumidores finales) y Factura C (monotributistas). <strong>La clasificación puede variar según la normativa vigente de ARCA (ex AFIP).</strong></p>
-        <h3>2. Requisitos de la factura</h3>
-        <ul><li>Datos del vendedor y comprador (nombre, CUIT/DNI, domicilio).</li><li>Descripción detallada del producto (marca, modelo, tamaño).</li><li>Precio unitario y total, fecha, número de comprobante.</li><li>Condición de IVA y percepciones.</li></ul>
-        <h3>3. Importancia</h3>
-        <p>La factura es necesaria para hacer valer la garantía, acreditar la compra legal y realizar reclamos ante el vendedor o fabricante.</p>
-        <h3>4. Si no te dan factura</h3>
-        <p>Podés solicitar el libro de quejas, denunciar ante ARCA o recurrir a Defensa del Consumidor.</p>
-        <div class="highlight"><strong>📌 Siempre exigí tu factura.</strong> Es tu derecho y te protege.</div>
-        <a href="#inicio" class="back-top">⬆ Volver al inicio</a>
-    </section>
-
-    <!-- COOKIES (corregido) -->
-    <section id="cookies" class="legal-section">
-        <h2>🍪 Aviso sobre el uso de almacenamiento local</h2>
-        <p><strong>Última actualización:</strong> 2 de agosto de 2026</p>
-        <h3>1. ¿Qué utilizamos?</h3>
-        <p>En <strong>LlantasMultiAy</strong> <strong>no utilizamos cookies de seguimiento, publicitarias ni de terceros</strong>. Solo empleamos el <strong>almacenamiento local (localStorage)</strong> del navegador para recordar tu preferencia sobre el aviso de privacidad (si aceptaste o rechazaste el banner).</p>
-        <h3>2. ¿Qué es localStorage?</h3>
-        <p>Es una tecnología que permite guardar pequeñas cantidades de datos en tu navegador. No se envían a nuestros servidores ni se comparten con terceros.</p>
-        <h3>3. Cookies de terceros</h3>
-        <p>Los enlaces a redes sociales (Instagram, Facebook) pueden establecer sus propias cookies. Te recomendamos revisar sus políticas de privacidad.</p>
-        <h3>4. Gestión</h3>
-        <p>Podés borrar el almacenamiento local desde la configuración de tu navegador en cualquier momento.</p>
-        <h3>5. Consentimiento</h3>
-        <p>Al navegar, aceptás el uso de localStorage según esta política. Podés retirar tu consentimiento en cualquier momento.</p>
-        <div class="highlight"><strong>📌 Más información:</strong> cookies@llantasmultiay.vercel.app</div>
-        <a href="#inicio" class="back-top">⬆ Volver al inicio</a>
-    </section>
-
-    <!-- FOOTER -->
-    <div class="footer">
-        <div><span style="font-weight:600;">🇦🇷 LlantasMultiAy</span> &copy; 2026 - Proyecto editorial independiente</div>
-        <div>
-            <a href="#sobre-nosotros">Quiénes somos</a>
-            <a href="#privacidad">Privacidad</a>
-            <a href="#terminos">Términos</a>
-            <a href="#garantia">Garantía</a>
-            <a href="#facturacion">Facturación</a>
-            <a href="#cookies">Cookies</a>
-            <a href="#contacto">Contacto</a>
-        </div>
+<section id="inicio">
+  <div class="hero">
+    <div class="hero-text">
+      <h2>Información sobre llantas<br>para Colombia</h2>
+      <p>Guías, consejos y contenido educativo sobre neumáticos, mantenimiento y seguridad vial para conductores en Colombia.</p>
+      <div class="pills">
+        <span class="pill">✅ Seguridad vial</span>
+        <span class="pill">✅ Mantenimiento</span>
+        <span class="pill">✅ Información para Colombia</span>
+      </div>
     </div>
-    <div style="margin-top:1.2rem;font-size:0.8rem;color:#3a5d7a;text-align:center;border-top:1px solid #e4ebf3;padding-top:1.2rem;">
-        <span>📋 Contenido educativo · Sin ventas directas · Información orientativa</span>
+    <div class="hero-image"><span>🚗</span></div>
+  </div>
+
+  <h2 style="font-size:1.8rem;margin-bottom:.5rem">📚 Temas de interés</h2>
+  <p style="color:#29465f;margin-bottom:1.8rem">Contenido general pensado para ayudar a comprender mejor el cuidado y mantenimiento de los neumáticos.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>🛞 Tipos de llantas</h3>
+      <p>Conoce las principales categorías de neumáticos y sus características generales según el vehículo, el uso y las condiciones de circulación.</p>
     </div>
+    <div class="card">
+      <h3>🔧 Mantenimiento</h3>
+      <p>Información sobre presión, inspección visual, rotación, alineación, balanceo y otros cuidados habituales.</p>
+    </div>
+    <div class="card">
+      <h3>📏 Seguridad vial</h3>
+      <p>Aprende qué aspectos revisar antes de circular y por qué el estado de las llantas es importante para la seguridad.</p>
+    </div>
+    <div class="card">
+      <h3>📜 Normativa colombiana</h3>
+      <p>Orientación general sobre normas y recomendaciones relacionadas con vehículos, llantas y seguridad vial en Colombia. Consulta siempre la fuente oficial vigente.</p>
+    </div>
+    <div class="card">
+      <h3>🌦️ Clima y rendimiento</h3>
+      <p>Cómo las condiciones de lluvia, temperatura, carreteras y diferentes regiones pueden influir en el comportamiento de los neumáticos.</p>
+    </div>
+    <div class="card">
+      <h3>♻️ Durabilidad y eficiencia</h3>
+      <p>Consejos generales para conservar correctamente las llantas y aprovechar su vida útil mediante un mantenimiento adecuado.</p>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <h3>📬 Consultas e información</h3>
+    <p><strong>📧 Email:</strong> info@llantasmulticolombia.com</p>
+    <p><strong>🕒 Atención:</strong> lunes a viernes, 10:00 a 18:00</p>
+    <p style="margin-top:.5rem">💡 Este es un sitio <strong>informativo</strong>. No realizamos ventas ni cobramos por la información publicada.</p>
+  </div>
+
+  <div class="disclaimer">
+    <strong>📢 Aviso importante:</strong>
+    La información publicada tiene fines educativos y generales. Para asuntos técnicos, legales o relacionados con la seguridad de un vehículo, verifica siempre la información con las autoridades, fabricantes o profesionales correspondientes.
+  </div>
+</section>
+
+<section id="privacidad" class="legal-section">
+  <h2>🔒 Política de Privacidad</h2>
+  <p><strong>Última actualización:</strong> 12 de agosto de 2026</p>
+
+  <p>En <strong>LlantasMulti Colombia</strong> respetamos la privacidad de los visitantes. Esta política explica de manera general cómo se trata la información personal cuando una persona utiliza este sitio.</p>
+
+  <h3>1. Marco general</h3>
+  <p>El tratamiento de datos personales en Colombia se encuentra sujeto, entre otras disposiciones, a la <strong>Ley 1581 de 2012</strong> y a su reglamentación aplicable.</p>
+
+  <h3>2. Información que podemos recibir</h3>
+  <p>Este sitio es principalmente informativo. Si el visitante decide contactarnos voluntariamente, podría proporcionar datos como nombre, correo electrónico o el contenido de su consulta.</p>
+
+  <h3>3. Finalidad</h3>
+  <ul>
+    <li>Responder consultas enviadas voluntariamente.</li>
+    <li>Atender solicitudes relacionadas con el contenido del sitio.</li>
+    <li>Cumplir obligaciones legales cuando corresponda.</li>
+  </ul>
+
+  <h3>4. Derechos del titular</h3>
+  <p>El titular puede ejercer los derechos reconocidos por la normativa colombiana aplicable, incluyendo conocer, actualizar, rectificar y solicitar la supresión de sus datos cuando proceda.</p>
+
+  <div class="highlight"><strong>📌 Contacto de privacidad:</strong> info@llantasmulticolombia.com</div>
+  <a href="#inicio" class="back-top">⬆ Volver al inicio</a>
+</section>
+
+<section id="terminos" class="legal-section">
+  <h2>📋 Términos y Condiciones</h2>
+  <p><strong>Última actualización:</strong> 12 de agosto de 2026</p>
+
+  <p>El acceso a este sitio implica la aceptación de estos términos en lo que resulte aplicable.</p>
+
+  <h3>1. Naturaleza del sitio</h3>
+  <p>Este sitio tiene carácter exclusivamente informativo y educativo. No constituye una tienda en línea ni una plataforma de contratación.</p>
+
+  <h3>2. Contenido</h3>
+  <p>El contenido se publica con fines generales. Las normas, especificaciones técnicas y recomendaciones pueden cambiar, por lo que se recomienda comprobar la información vigente en fuentes oficiales.</p>
+
+  <h3>3. Propiedad intelectual</h3>
+  <p>Los textos, elementos gráficos y diseño del sitio pertenecen a sus respectivos titulares o se utilizan con autorización cuando corresponda. No se autoriza su reproducción no permitida por la legislación aplicable.</p>
+
+  <h3>4. Enlaces externos</h3>
+  <p>Cuando existan enlaces hacia terceros, estos pueden estar sujetos a sus propias condiciones y políticas de privacidad.</p>
+
+  <h3>5. Responsabilidad</h3>
+  <p>La información general del sitio no sustituye la evaluación de un técnico, fabricante, autoridad competente o profesional especializado.</p>
+
+  <a href="#inicio" class="back-top">⬆ Volver al inicio</a>
+</section>
+
+<section id="garantia" class="legal-section">
+  <h2>🛡️ Garantía</h2>
+  <p><strong>Última actualización:</strong> 12 de agosto de 2026</p>
+
+  <div class="highlight"><strong>📌 Importante:</strong> Este sitio no comercializa llantas directamente. La información sobre garantías es únicamente general.</div>
+
+  <h3>1. Garantía de productos</h3>
+  <p>Las condiciones de garantía de una llanta dependen del fabricante, producto, vendedor y circunstancias de la compra. Revisa siempre los documentos entregados con el producto.</p>
+
+  <h3>2. Documentos recomendados</h3>
+  <ul>
+    <li>Factura o comprobante de compra.</li>
+    <li>Documento o certificado de garantía, cuando corresponda.</li>
+    <li>Soportes de instalación o servicios realizados.</li>
+  </ul>
+
+  <h3>3. Reclamos</h3>
+  <p>Ante un inconveniente, conserva los documentos de compra y contacta primero al establecimiento o fabricante según las condiciones de garantía aplicables.</p>
+
+  <a href="#inicio" class="back-top">⬆ Volver al inicio</a>
+</section>
+
+<section id="facturacion" class="legal-section">
+  <h2>🧾 Facturación</h2>
+  <p><strong>Última actualización:</strong> 12 de agosto de 2026</p>
+
+  <div class="highlight"><strong>📌 Este sitio es informativo:</strong> no realizamos ventas directas ni emitimos facturas por la información publicada.</div>
+
+  <h3>1. Facturación en Colombia</h3>
+  <p>Cuando una compra se realiza a través de un comercio, la documentación y facturación deben ajustarse a las obligaciones que correspondan al vendedor y a la normativa tributaria vigente.</p>
+
+  <h3>2. Información de la factura</h3>
+  <p>Los requisitos concretos pueden variar según el tipo de operación y el obligado a facturar. Para información actualizada, consulta directamente las disposiciones y canales oficiales de la <strong>DIAN</strong>.</p>
+
+  <h3>3. Conserva tus comprobantes</h3>
+  <ul>
+    <li>Sirven como respaldo de la compra.</li>
+    <li>Pueden ser necesarios para tramitar garantías.</li>
+    <li>Permiten identificar el producto y la fecha de adquisición.</li>
+  </ul>
+
+  <a href="#inicio" class="back-top">⬆ Volver al inicio</a>
+</section>
+
+<section id="cookies" class="legal-section">
+  <h2>🍪 Aviso de Cookies</h2>
+  <p><strong>Última actualización:</strong> 12 de agosto de 2026</p>
+
+  <h3>1. ¿Qué son las cookies?</h3>
+  <p>Son pequeños archivos que un sitio puede almacenar en el dispositivo del visitante para recordar determinadas preferencias o facilitar funciones técnicas.</p>
+
+  <h3>2. Uso en este sitio</h3>
+  <p>El sitio puede utilizar almacenamiento local para recordar la elección realizada en el aviso de cookies. Si se incorporan herramientas de terceros, sus tecnologías pueden tener sus propias políticas.</p>
+
+  <h3>3. Gestión</h3>
+  <p>El visitante puede gestionar o eliminar cookies y datos de sitios desde las opciones de privacidad y seguridad de su navegador.</p>
+
+  <div class="highlight"><strong>📌 Información:</strong> para consultas sobre privacidad y cookies, escribe a info@llantasmulticolombia.com</div>
+  <a href="#inicio" class="back-top">⬆ Volver al inicio</a>
+</section>
+
+<div class="footer">
+  <div><span style="font-weight:600">🇨🇴 LlantasMulti Colombia</span> &copy; 2026 - Contenido informativo</div>
+  <div>
+    <a href="#privacidad">Privacidad</a>
+    <a href="#terminos">Términos</a>
+    <a href="#garantia">Garantía</a>
+    <a href="#facturacion">Facturación</a>
+    <a href="#cookies">Cookies</a>
+  </div>
 </div>
 
-<!-- COOKIE BANNER (actualizado) -->
+<div style="margin-top:1.2rem;font-size:.8rem;color:#3a5d7a;text-align:center;border-top:1px solid #e4ebf3;padding-top:1.2rem">
+  📋 Sitio informativo · Contenido general · Sin ventas directas
+</div>
+
+</div>
+
 <div id="cookieBanner" class="cookie-banner">
-    <p>🍪 Usamos <strong>almacenamiento local</strong> (no cookies) para recordar tu preferencia sobre este aviso. No rastreamos tu actividad. Al continuar, aceptás nuestra <a href="#cookies" style="color:#8bc34a;text-decoration:underline;">política de privacidad</a>.</p>
-    <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
-        <button class="btn-cookie-reject" id="rejectCookies">Rechazar</button>
-        <button class="btn-cookie" id="acceptCookies">Aceptar</button>
-    </div>
+  <p>🍪 Este sitio utiliza almacenamiento local para recordar tu preferencia sobre este aviso. Consulta nuestro <a href="#cookies">Aviso de Cookies</a>.</p>
+  <div style="display:flex;gap:.8rem;flex-wrap:wrap">
+    <button class="btn-cookie-reject" id="rejectCookies">Rechazar</button>
+    <button class="btn-cookie" id="acceptCookies">Aceptar</button>
+  </div>
 </div>
 
 <script>
-    (function(){
-        const banner=document.getElementById('cookieBanner');
-        const acceptBtn=document.getElementById('acceptCookies');
-        const rejectBtn=document.getElementById('rejectCookies');
-        function hideBanner(){ banner.style.display='none'; }
-        function setConsent(accepted){
-            try{ localStorage.setItem('cookieConsent', accepted?'accepted':'rejected'); }catch(e){}
-            hideBanner();
-        }
-        function checkConsent(){
-            try{ const c=localStorage.getItem('cookieConsent'); if(c==='accepted'||c==='rejected'){ hideBanner(); return true; } }catch(e){}
-            return false;
-        }
-        if(acceptBtn) acceptBtn.addEventListener('click',function(){ setConsent(true); });
-        if(rejectBtn) rejectBtn.addEventListener('click',function(){ setConsent(false); });
-        if(!checkConsent()){ setTimeout(function(){ banner.style.display='flex'; },300); }
-    })();
+(function(){
+  'use strict';
+  const banner=document.getElementById('cookieBanner');
+  const accept=document.getElementById('acceptCookies');
+  const reject=document.getElementById('rejectCookies');
+
+  function hide(){banner.style.display='none'}
+  function save(value){
+    try{localStorage.setItem('cookieConsent',value)}catch(e){}
+    hide();
+  }
+
+  try{
+    const saved=localStorage.getItem('cookieConsent');
+    if(saved==='accepted'||saved==='rejected') hide();
+  }catch(e){}
+
+  accept.addEventListener('click',()=>save('accepted'));
+  reject.addEventListener('click',()=>save('rejected'));
+})();
 </script>
 </body>
 </html>
