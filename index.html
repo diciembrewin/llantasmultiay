@@ -5,315 +5,1310 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Llantas Multi Colombia | Información sobre llantas y seguridad vial</title>
-<meta name="description" content="Sitio informativo sobre llantas, neumáticos, mantenimiento y seguridad vial en Colombia. Guías y recomendaciones de carácter educativo.">
-<meta name="keywords" content="llantas Colombia, neumáticos Colombia, seguridad vial, mantenimiento de llantas, consejos para conductores">
+
+<meta
+  name="description"
+  content="Llantas Multi Colombia es un sitio web que ofrece información general y educativa sobre llantas, neumáticos, mantenimiento y seguridad vial en Colombia."
+>
+
+<meta
+  name="keywords"
+  content="llantas Colombia, neumáticos Colombia, mantenimiento de llantas, seguridad vial, presión de llantas"
+>
+
+<meta name="robots" content="index, follow">
+<meta name="author" content="Llantas Multi Colombia">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Roboto,system-ui,sans-serif}
-html{scroll-behavior:smooth}
-body{background:#f0f4f8;color:#102033;line-height:1.7;padding:1rem}
-.container{max-width:1200px;margin:0 auto;background:#fff;border-radius:32px;box-shadow:0 20px 60px rgba(0,0,0,.06);padding:2rem 2rem 3rem}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',Roboto,system-ui,sans-serif;
+}
 
-header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;border-bottom:2px solid #eef2f6;padding-bottom:1.5rem;margin-bottom:2rem}
-.logo h1{font-size:2.2rem;font-weight:700;letter-spacing:-.5px;color:#102d48}
-.logo span{color:#c62828}
-.logo .co-flag{font-size:1.8rem;margin-right:6px}
-.badge{font-size:.85rem;color:#17486a;background:#e3edf7;padding:.4rem 1.2rem;border-radius:40px;font-weight:500;display:inline-block}
-.badge-info{background:#fff1cf;color:#775400}
+html{
+  scroll-behavior:smooth;
+}
 
-.nav-links{display:flex;flex-wrap:wrap;gap:.5rem 1.2rem;margin:1rem 0 1.5rem;padding:.8rem 1.2rem;background:#f8fafc;border-radius:40px;border:1px solid #e5ecf3}
-.nav-links a{color:#174b72;text-decoration:none;font-weight:500;font-size:.95rem}
-.nav-links a:hover{text-decoration:underline;color:#0b2942}
-.nav-links .sep{color:#c0d0e0}
+body{
+  background:#f0f4f8;
+  color:#102033;
+  line-height:1.7;
+  padding:1rem;
+}
 
-.hero{display:flex;flex-wrap:wrap;gap:2rem;margin:1.5rem 0 3rem;background:linear-gradient(135deg,#fff4d6 0%,#fff 48%,#eaf5ff 100%);padding:2rem;border-radius:28px}
-.hero-text{flex:1 1 300px}
-.hero-text h2{font-size:2.4rem;font-weight:700;line-height:1.2;color:#102d48}
-.hero-text p{font-size:1.15rem;color:#29465f;margin:1.2rem 0 1.8rem}
-.pills{display:flex;flex-wrap:wrap;gap:.8rem}
-.pill{background:#fff0c7;padding:.3rem 1.2rem;border-radius:30px;font-size:.9rem;border:1px solid #f0ddb0}
-.hero-image{flex:1 1 260px;min-height:190px;border-radius:24px;display:flex;align-items:center;justify-content:center;font-size:5rem;background:linear-gradient(145deg,#dbeeff,#fff1c8);border:1px solid #dbe5ef}
+.container{
+  max-width:1200px;
+  margin:0 auto;
+  background:#fff;
+  border-radius:32px;
+  box-shadow:0 20px 60px rgba(0,0,0,.06);
+  padding:2rem 2rem 3rem;
+}
 
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem;margin:3rem 0}
-.card{background:#f9fcff;padding:1.8rem 1.5rem;border-radius:24px;border:1px solid #e5ecf3;transition:.15s}
-.card:hover{background:#fff;box-shadow:0 8px 24px rgba(0,0,0,.04);transform:translateY(-1px)}
-.card h3{font-size:1.35rem;margin-bottom:.7rem;color:#102d48}
-.card p{color:#29465f}
+header{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+  gap:1rem;
+  border-bottom:2px solid #eef2f6;
+  padding-bottom:1.5rem;
+  margin-bottom:2rem;
+}
 
-.info-box{background:#eef7ff;border-radius:16px;padding:1.5rem 2rem;margin:2rem 0;border-left:4px solid #d39b00}
-.info-box h3{color:#102d48;margin-bottom:.5rem}
-.disclaimer{background:#fff8e8;border-radius:16px;padding:1.2rem 1.8rem;margin:2rem 0 1rem;border:1px solid #eadfbf;font-size:.95rem;color:#55482d}
-.disclaimer strong{color:#3f5c20}
+.logo h1{
+  font-size:2.2rem;
+  font-weight:700;
+  letter-spacing:-.5px;
+  color:#102d48;
+}
 
-.legal-section{background:#f9fcff;border-radius:24px;padding:2rem;margin:2.5rem 0;border:1px solid #e5ecf3;scroll-margin-top:20px}
-.legal-section h2{font-size:1.8rem;color:#102d48;margin-bottom:.5rem;display:flex;align-items:center;gap:10px}
-.legal-section h3{font-size:1.2rem;color:#174b72;margin:1.2rem 0 .5rem}
-.legal-section p,.legal-section li{color:#29465f;margin-bottom:.6rem}
-.legal-section ul{padding-left:1.8rem;margin:.5rem 0 1rem}
-.highlight{background:#eef7ff;padding:.8rem 1.2rem;border-radius:12px;border-left:4px solid #d39b00;margin:1rem 0}
+.logo .brand{
+  color:#c62828;
+}
 
-.footer{margin-top:3.5rem;padding-top:2rem;border-top:2px solid #eef2f6;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1.5rem;font-size:.95rem;color:#2b4c6b}
-.footer a{color:#174b72;text-decoration:none;font-weight:500;margin-right:.8rem}
-.footer a:hover{text-decoration:underline}
+.logo .co-flag{
+  font-size:1.8rem;
+  margin-right:6px;
+}
 
-.cookie-banner{position:fixed;bottom:0;left:0;right:0;background:#102033;color:#eef5fb;padding:1.2rem 2rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;z-index:999;box-shadow:0 -4px 20px rgba(0,0,0,.2);border-top:3px solid #d39b00}
-.cookie-banner p{flex:1;min-width:220px;font-size:.95rem;margin:0}
-.cookie-banner a{color:#ffd75a}
-.btn-cookie,.btn-cookie-reject{padding:.6rem 1.8rem;border-radius:40px;font-weight:600;cursor:pointer;font-size:.95rem}
-.btn-cookie{background:#d39b00;color:#17202b;border:0}
-.btn-cookie-reject{background:transparent;color:#aac0d0;border:1px solid #3a5a7a}
+.badge{
+  font-size:.85rem;
+  color:#17486a;
+  background:#e3edf7;
+  padding:.4rem 1.2rem;
+  border-radius:40px;
+  font-weight:500;
+  display:inline-block;
+}
 
-.back-top{display:inline-block;margin-top:1rem;color:#b07b00;text-decoration:none;font-weight:600}
+.badge-info{
+  background:#fff1cf;
+  color:#775400;
+}
+
+.nav-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.5rem 1.1rem;
+  margin:1rem 0 1.5rem;
+  padding:.8rem 1.2rem;
+  background:#f8fafc;
+  border-radius:40px;
+  border:1px solid #e5ecf3;
+}
+
+.nav-links a{
+  color:#174b72;
+  text-decoration:none;
+  font-weight:500;
+  font-size:.95rem;
+}
+
+.nav-links a:hover{
+  text-decoration:underline;
+  color:#0b2942;
+}
+
+.nav-links .sep{
+  color:#c0d0e0;
+}
+
+.hero{
+  display:flex;
+  flex-wrap:wrap;
+  gap:2rem;
+  margin:1.5rem 0 3rem;
+  background:linear-gradient(
+    135deg,
+    #fff4d6 0%,
+    #fff 48%,
+    #eaf5ff 100%
+  );
+  padding:2rem;
+  border-radius:28px;
+}
+
+.hero-text{
+  flex:1 1 300px;
+}
+
+.hero-text h2{
+  font-size:2.4rem;
+  font-weight:700;
+  line-height:1.2;
+  color:#102d48;
+}
+
+.hero-text p{
+  font-size:1.15rem;
+  color:#29465f;
+  margin:1.2rem 0 1.8rem;
+}
+
+.pills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.8rem;
+}
+
+.pill{
+  background:#fff0c7;
+  padding:.3rem 1.2rem;
+  border-radius:30px;
+  font-size:.9rem;
+  border:1px solid #f0ddb0;
+}
+
+.hero-image{
+  flex:1 1 260px;
+  min-height:190px;
+  border-radius:24px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:5rem;
+  background:linear-gradient(145deg,#dbeeff,#fff1c8);
+  border:1px solid #dbe5ef;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:2rem;
+  margin:3rem 0;
+}
+
+.card{
+  background:#f9fcff;
+  padding:1.8rem 1.5rem;
+  border-radius:24px;
+  border:1px solid #e5ecf3;
+  transition:.15s;
+}
+
+.card:hover{
+  background:#fff;
+  box-shadow:0 8px 24px rgba(0,0,0,.04);
+  transform:translateY(-1px);
+}
+
+.card h3{
+  font-size:1.35rem;
+  margin-bottom:.7rem;
+  color:#102d48;
+}
+
+.card p{
+  color:#29465f;
+}
+
+.info-box{
+  background:#eef7ff;
+  border-radius:16px;
+  padding:1.5rem 2rem;
+  margin:2rem 0;
+  border-left:4px solid #d39b00;
+}
+
+.info-box h3{
+  color:#102d48;
+  margin-bottom:.5rem;
+}
+
+.disclaimer{
+  background:#fff8e8;
+  border-radius:16px;
+  padding:1.2rem 1.8rem;
+  margin:2rem 0 1rem;
+  border:1px solid #eadfbf;
+  font-size:.95rem;
+  color:#55482d;
+}
+
+.disclaimer strong{
+  color:#3f5c20;
+}
+
+.legal-section{
+  background:#f9fcff;
+  border-radius:24px;
+  padding:2rem;
+  margin:2.5rem 0;
+  border:1px solid #e5ecf3;
+  scroll-margin-top:20px;
+}
+
+.legal-section h2{
+  font-size:1.8rem;
+  color:#102d48;
+  margin-bottom:.8rem;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.legal-section h3{
+  font-size:1.2rem;
+  color:#174b72;
+  margin:1.2rem 0 .5rem;
+}
+
+.legal-section p,
+.legal-section li{
+  color:#29465f;
+  margin-bottom:.6rem;
+}
+
+.legal-section ul{
+  padding-left:1.8rem;
+  margin:.5rem 0 1rem;
+}
+
+.highlight{
+  background:#eef7ff;
+  padding:.9rem 1.2rem;
+  border-radius:12px;
+  border-left:4px solid #d39b00;
+  margin:1rem 0;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1rem;
+  margin-top:1.2rem;
+}
+
+.contact-item{
+  background:#fff;
+  border:1px solid #e5ecf3;
+  border-radius:16px;
+  padding:1.2rem;
+}
+
+.contact-item strong{
+  display:block;
+  color:#102d48;
+  margin-bottom:.3rem;
+}
+
+.footer{
+  margin-top:3.5rem;
+  padding-top:2rem;
+  border-top:2px solid #eef2f6;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+  gap:1.5rem;
+  font-size:.95rem;
+  color:#2b4c6b;
+}
+
+.footer a{
+  color:#174b72;
+  text-decoration:none;
+  font-weight:500;
+  margin-right:.8rem;
+}
+
+.footer a:hover{
+  text-decoration:underline;
+}
+
+.cookie-banner{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background:#102033;
+  color:#eef5fb;
+  padding:1.2rem 2rem;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  z-index:999;
+  box-shadow:0 -4px 20px rgba(0,0,0,.2);
+  border-top:3px solid #d39b00;
+}
+
+.cookie-banner p{
+  flex:1;
+  min-width:220px;
+  font-size:.95rem;
+  margin:0;
+}
+
+.cookie-banner a{
+  color:#ffd75a;
+}
+
+.cookie-buttons{
+  display:flex;
+  gap:.8rem;
+  flex-wrap:wrap;
+}
+
+.btn-cookie,
+.btn-cookie-reject{
+  padding:.6rem 1.8rem;
+  border-radius:40px;
+  font-weight:600;
+  cursor:pointer;
+  font-size:.95rem;
+}
+
+.btn-cookie{
+  background:#d39b00;
+  color:#17202b;
+  border:0;
+}
+
+.btn-cookie-reject{
+  background:transparent;
+  color:#aac0d0;
+  border:1px solid #3a5a7a;
+}
+
+.back-top{
+  display:inline-block;
+  margin-top:1rem;
+  color:#b07b00;
+  text-decoration:none;
+  font-weight:600;
+}
 
 @media(max-width:650px){
- body{padding:.5rem}
- .container{padding:1.2rem;border-radius:22px}
- .hero-text h2{font-size:1.8rem}
- .logo h1{font-size:1.7rem}
- .nav-links{border-radius:20px}
- .legal-section{padding:1.2rem}
- .cookie-banner{padding:1rem;flex-direction:column;text-align:center}
- .hero-image{min-height:150px}
+
+  body{
+    padding:.5rem;
+  }
+
+  .container{
+    padding:1.2rem;
+    border-radius:22px;
+  }
+
+  .hero-text h2{
+    font-size:1.8rem;
+  }
+
+  .logo h1{
+    font-size:1.7rem;
+  }
+
+  .nav-links{
+    border-radius:20px;
+  }
+
+  .legal-section{
+    padding:1.2rem;
+  }
+
+  .cookie-banner{
+    padding:1rem;
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-image{
+    min-height:150px;
+  }
+
+  .cookie-buttons{
+    justify-content:center;
+  }
 }
 </style>
 </head>
 
 <body>
+
 <div class="container">
 
+<!-- ENCABEZADO -->
+
 <header>
+
   <div class="logo">
-    <h1><span class="co-flag">🇨🇴</span><span>Llantas</span>Multi Colombia</h1>
+
+    <h1>
+      <span class="co-flag">🇨🇴</span>
+      <span class="brand">Llantas</span> Multi Colombia
+    </h1>
+
   </div>
+
   <div>
-    <span class="badge badge-info">📋 Sitio informativo</span>
-    <span class="badge" style="margin-left:.5rem">🔎 Sin fines comerciales</span>
+
+    <span class="badge badge-info">
+      📚 Contenido informativo
+    </span>
+
+    <span class="badge" style="margin-left:.5rem">
+      🌐 Servicio en línea
+    </span>
+
   </div>
+
 </header>
 
-<nav class="nav-links">
-  <a href="#inicio">Inicio</a><span class="sep">|</span>
-  <a href="#privacidad">Política de Privacidad</a><span class="sep">|</span>
-  <a href="#terminos">Términos y Condiciones</a><span class="sep">|</span>
-  <a href="#garantia">Garantía</a><span class="sep">|</span>
-  <a href="#facturacion">Facturación</a><span class="sep">|</span>
+
+<!-- NAVEGACIÓN -->
+
+<nav class="nav-links" aria-label="Navegación principal">
+
+  <a href="#inicio">Inicio</a>
+  <span class="sep">|</span>
+
+  <a href="#nosotros">Quiénes somos</a>
+  <span class="sep">|</span>
+
+  <a href="#informacion">Información</a>
+  <span class="sep">|</span>
+
+  <a href="#seguridad">Seguridad vial</a>
+  <span class="sep">|</span>
+
+  <a href="#privacidad">Privacidad</a>
+  <span class="sep">|</span>
+
+  <a href="#terminos">Términos</a>
+  <span class="sep">|</span>
+
   <a href="#cookies">Cookies</a>
+  <span class="sep">|</span>
+
+  <a href="#contacto">Contacto</a>
+
 </nav>
 
+
+<!-- INICIO -->
+
 <section id="inicio">
+
   <div class="hero">
+
     <div class="hero-text">
-      <h2>Información sobre llantas<br>para Colombia</h2>
-      <p>Guías, consejos y contenido educativo sobre neumáticos, mantenimiento y seguridad vial para conductores en Colombia.</p>
+
+      <h2>
+        Información sobre llantas
+        <br>
+        para Colombia
+      </h2>
+
+      <p>
+        Llantas Multi Colombia es un sitio web de información general
+        y educativa sobre neumáticos, mantenimiento y seguridad vial
+        para personas interesadas en estos temas en Colombia.
+      </p>
+
       <div class="pills">
-        <span class="pill">✅ Seguridad vial</span>
-        <span class="pill">✅ Mantenimiento</span>
-        <span class="pill">✅ Información para Colombia</span>
+
+        <span class="pill">
+          ✅ Seguridad vial
+        </span>
+
+        <span class="pill">
+          ✅ Mantenimiento
+        </span>
+
+        <span class="pill">
+          ✅ Información educativa
+        </span>
+
+        <span class="pill">
+          ✅ Colombia
+        </span>
+
       </div>
+
     </div>
-    <div class="hero-image"><span>🚗</span></div>
+
+    <div class="hero-image" aria-hidden="true">
+      🚗
+    </div>
+
   </div>
 
-  <h2 style="font-size:1.8rem;margin-bottom:.5rem">📚 Temas de interés</h2>
-  <p style="color:#29465f;margin-bottom:1.8rem">Contenido general pensado para ayudar a comprender mejor el cuidado y mantenimiento de los neumáticos.</p>
+
+  <h2 style="font-size:1.8rem;margin-bottom:.5rem">
+    📚 Temas de interés
+  </h2>
+
+  <p style="color:#29465f;margin-bottom:1.8rem">
+
+    Contenido general pensado para ayudar a comprender mejor
+    el cuidado, mantenimiento y uso responsable de los neumáticos.
+
+  </p>
+
 
   <div class="grid">
+
     <div class="card">
+
       <h3>🛞 Tipos de llantas</h3>
-      <p>Conoce las principales categorías de neumáticos y sus características generales según el vehículo, el uso y las condiciones de circulación.</p>
+
+      <p>
+        Información general sobre diferentes categorías de neumáticos,
+        sus características y los factores que pueden influir en su
+        elección según el vehículo y las condiciones de utilización.
+      </p>
+
     </div>
+
+
     <div class="card">
+
       <h3>🔧 Mantenimiento</h3>
-      <p>Información sobre presión, inspección visual, rotación, alineación, balanceo y otros cuidados habituales.</p>
+
+      <p>
+        Información sobre presión, inspección visual, alineación,
+        balanceo, rotación y otros aspectos habituales del mantenimiento
+        de los neumáticos.
+      </p>
+
     </div>
+
+
     <div class="card">
+
       <h3>📏 Seguridad vial</h3>
-      <p>Aprende qué aspectos revisar antes de circular y por qué el estado de las llantas es importante para la seguridad.</p>
+
+      <p>
+        Información educativa sobre el estado de los neumáticos y
+        diferentes comprobaciones que pueden realizarse antes de
+        circular.
+      </p>
+
     </div>
+
+
     <div class="card">
+
       <h3>📜 Normativa colombiana</h3>
-      <p>Orientación general sobre normas y recomendaciones relacionadas con vehículos, llantas y seguridad vial en Colombia. Consulta siempre la fuente oficial vigente.</p>
+
+      <p>
+        Información general sobre aspectos relacionados con vehículos,
+        neumáticos y seguridad vial en Colombia. Consulta siempre las
+        fuentes oficiales para conocer la normativa vigente.
+      </p>
+
     </div>
+
+
     <div class="card">
+
       <h3>🌦️ Clima y rendimiento</h3>
-      <p>Cómo las condiciones de lluvia, temperatura, carreteras y diferentes regiones pueden influir en el comportamiento de los neumáticos.</p>
+
+      <p>
+        Información sobre cómo la lluvia, temperatura, carretera y
+        diferentes condiciones de circulación pueden influir en el
+        comportamiento de los neumáticos.
+      </p>
+
     </div>
+
+
     <div class="card">
+
       <h3>♻️ Durabilidad y eficiencia</h3>
-      <p>Consejos generales para conservar correctamente las llantas y aprovechar su vida útil mediante un mantenimiento adecuado.</p>
+
+      <p>
+        Consejos generales para conservar adecuadamente los neumáticos
+        y contribuir a un mantenimiento responsable.
+      </p>
+
     </div>
+
   </div>
+
 
   <div class="info-box">
-    <h3>📬 Consultas e información</h3>
-    <p><strong>📧 Email:</strong> info@llantasmulticolombia.com</p>
-    <p><strong>🕒 Atención:</strong> lunes a viernes, 10:00 a 18:00</p>
-    <p style="margin-top:.5rem">💡 Este es un sitio <strong>informativo</strong>. No realizamos ventas ni cobramos por la información publicada.</p>
+
+    <h3>📬 Contacto</h3>
+
+    <p>
+      <strong>Correo electrónico:</strong>
+      info@llantasmulticolombia.com
+    </p>
+
+    <p>
+      Las consultas relacionadas con el contenido del sitio se
+      gestionan exclusivamente por medios digitales.
+    </p>
+
   </div>
+
 
   <div class="disclaimer">
+
     <strong>📢 Aviso importante:</strong>
-    La información publicada tiene fines educativos y generales. Para asuntos técnicos, legales o relacionados con la seguridad de un vehículo, verifica siempre la información con las autoridades, fabricantes o profesionales correspondientes.
+
+    La información publicada tiene carácter general y educativo.
+    No sustituye las recomendaciones del fabricante, la evaluación
+    de un técnico, la asesoría de un profesional ni la información
+    proporcionada por las autoridades competentes.
+
   </div>
+
 </section>
+
+
+<!-- QUIÉNES SOMOS -->
+
+<section id="nosotros" class="legal-section">
+
+  <h2>👤 Quiénes somos</h2>
+
+  <p>
+    <strong>Llantas Multi Colombia</strong> es un sitio web dedicado
+    a la publicación de información general y educativa relacionada
+    con llantas, neumáticos, mantenimiento y seguridad vial en Colombia.
+  </p>
+
+
+  <h3>Propósito del sitio</h3>
+
+  <p>
+    Nuestro objetivo es ofrecer información de carácter general que
+    permita a los visitantes conocer mejor diferentes aspectos
+    relacionados con los neumáticos y su mantenimiento.
+  </p>
+
+
+  <h3>Actividad exclusivamente en línea</h3>
+
+  <p>
+    Llantas Multi Colombia desarrolla su actividad exclusivamente
+    a través de Internet. No contamos con establecimiento comercial,
+    tienda física ni punto de atención presencial.
+  </p>
+
+
+  <div class="highlight">
+
+    <strong>🌐 Modalidad de atención:</strong>
+
+    Toda comunicación relacionada con este sitio se realiza
+    mediante canales digitales.
+
+  </div>
+
+
+  <h3>Ubicación física</h3>
+
+  <p>
+    Este proyecto no dispone de una dirección física de atención
+    al público. El sitio opera de manera exclusivamente digital.
+  </p>
+
+
+  <h3>Contacto oficial</h3>
+
+  <p>
+    Para consultas relacionadas con el sitio y su contenido:
+  </p>
+
+  <p>
+    <strong>📧 info@llantasmulticolombia.com</strong>
+  </p>
+
+
+  <a href="#inicio" class="back-top">
+    ⬆ Volver al inicio
+  </a>
+
+</section>
+
+
+<!-- INFORMACIÓN -->
+
+<section id="informacion" class="legal-section">
+
+  <h2>📖 Información sobre llantas</h2>
+
+
+  <h3>Presión de los neumáticos</h3>
+
+  <p>
+    La presión adecuada depende del vehículo y de las especificaciones
+    indicadas por su fabricante. Consulta siempre la información
+    proporcionada por el fabricante antes de realizar ajustes.
+  </p>
+
+
+  <h3>Inspección visual</h3>
+
+  <p>
+    Una inspección periódica puede ayudar a identificar daños visibles,
+    desgaste irregular, objetos incrustados u otras condiciones que
+    puedan requerir atención profesional.
+  </p>
+
+
+  <h3>Desgaste</h3>
+
+  <p>
+    El desgaste puede depender de factores como presión, alineación,
+    balanceo, carga, estilo de conducción, condiciones de la carretera
+    y mantenimiento.
+  </p>
+
+
+  <h3>Reemplazo</h3>
+
+  <p>
+    Cuando un neumático presenta daños, desgaste excesivo o cualquier
+    condición que pueda comprometer su funcionamiento, debe ser
+    evaluado por un profesional cualificado.
+  </p>
+
+
+  <a href="#inicio" class="back-top">
+    ⬆ Volver al inicio
+  </a>
+
+</section>
+
+
+<!-- SEGURIDAD -->
+
+<section id="seguridad" class="legal-section">
+
+  <h2>🛡️ Seguridad vial</h2>
+
+  <p>
+    Los neumáticos son un componente importante del vehículo y
+    mantienen contacto directo con la superficie de circulación.
+  </p>
+
+
+  <h3>Antes de conducir</h3>
+
+  <ul>
+
+    <li>
+      Comprueba visualmente el estado de los neumáticos.
+    </li>
+
+    <li>
+      Verifica la presión según las especificaciones del fabricante.
+    </li>
+
+    <li>
+      Presta atención a daños, deformaciones o desgaste irregular.
+    </li>
+
+    <li>
+      Consulta a un profesional si detectas alguna anomalía.
+    </li>
+
+  </ul>
+
+
+  <h3>Conducción bajo lluvia</h3>
+
+  <p>
+    Las superficies mojadas pueden requerir mayor precaución.
+    La velocidad, el estado de los neumáticos y las condiciones
+    de la carretera pueden influir en la seguridad.
+  </p>
+
+
+  <div class="highlight">
+
+    <strong>⚠ Importante:</strong>
+
+    Ante cualquier duda relacionada con la seguridad de un neumático,
+    consulta al fabricante o a un profesional cualificado.
+
+  </div>
+
+
+  <a href="#inicio" class="back-top">
+    ⬆ Volver al inicio
+  </a>
+
+</section>
+
+
+<!-- PRIVACIDAD -->
 
 <section id="privacidad" class="legal-section">
+
   <h2>🔒 Política de Privacidad</h2>
-  <p><strong>Última actualización:</strong> 12 de agosto de 2026</p>
 
-  <p>En <strong>LlantasMulti Colombia</strong> respetamos la privacidad de los visitantes. Esta política explica de manera general cómo se trata la información personal cuando una persona utiliza este sitio.</p>
+  <p>
+    <strong>Última actualización:</strong>
+    13 de agosto de 2026
+  </p>
 
-  <h3>1. Marco general</h3>
-  <p>El tratamiento de datos personales en Colombia se encuentra sujeto, entre otras disposiciones, a la <strong>Ley 1581 de 2012</strong> y a su reglamentación aplicable.</p>
 
-  <h3>2. Información que podemos recibir</h3>
-  <p>Este sitio es principalmente informativo. Si el visitante decide contactarnos voluntariamente, podría proporcionar datos como nombre, correo electrónico o el contenido de su consulta.</p>
+  <h3>1. Información general</h3>
+
+  <p>
+    Llantas Multi Colombia respeta la privacidad de los visitantes.
+    Esta política explica de manera general cómo puede tratarse
+    información personal cuando una persona utiliza este sitio.
+  </p>
+
+
+  <h3>2. Información proporcionada voluntariamente</h3>
+
+  <p>
+    Si un visitante decide contactar voluntariamente al sitio por
+    correo electrónico, puede proporcionar datos como nombre,
+    dirección de correo electrónico y contenido de la consulta.
+  </p>
+
 
   <h3>3. Finalidad</h3>
+
   <ul>
-    <li>Responder consultas enviadas voluntariamente.</li>
-    <li>Atender solicitudes relacionadas con el contenido del sitio.</li>
-    <li>Cumplir obligaciones legales cuando corresponda.</li>
+
+    <li>
+      Responder consultas enviadas voluntariamente.
+    </li>
+
+    <li>
+      Atender solicitudes relacionadas con el contenido del sitio.
+    </li>
+
+    <li>
+      Mantener la comunicación solicitada por el visitante.
+    </li>
+
+    <li>
+      Cumplir obligaciones legales cuando corresponda.
+    </li>
+
   </ul>
+
 
   <h3>4. Derechos del titular</h3>
-  <p>El titular puede ejercer los derechos reconocidos por la normativa colombiana aplicable, incluyendo conocer, actualizar, rectificar y solicitar la supresión de sus datos cuando proceda.</p>
 
-  <div class="highlight"><strong>📌 Contacto de privacidad:</strong> info@llantasmulticolombia.com</div>
-  <a href="#inicio" class="back-top">⬆ Volver al inicio</a>
+  <p>
+    El tratamiento de datos personales en Colombia se encuentra
+    sujeto a la normativa aplicable, incluyendo la Ley 1581 de 2012
+    y las disposiciones que correspondan.
+  </p>
+
+
+  <p>
+    Los titulares pueden ejercer los derechos reconocidos por la
+    normativa aplicable en las condiciones establecidas por dicha
+    normativa.
+  </p>
+
+
+  <div class="highlight">
+
+    <strong>📌 Contacto de privacidad:</strong>
+
+    info@llantasmulticolombia.com
+
+  </div>
+
+
+  <a href="#inicio" class="back-top">
+    ⬆ Volver al inicio
+  </a>
+
 </section>
+
+
+<!-- TÉRMINOS -->
 
 <section id="terminos" class="legal-section">
-  <h2>📋 Términos y Condiciones</h2>
-  <p><strong>Última actualización:</strong> 12 de agosto de 2026</p>
 
-  <p>El acceso a este sitio implica la aceptación de estos términos en lo que resulte aplicable.</p>
+  <h2>📋 Términos y Condiciones</h2>
+
+  <p>
+    <strong>Última actualización:</strong>
+    13 de agosto de 2026
+  </p>
+
 
   <h3>1. Naturaleza del sitio</h3>
-  <p>Este sitio tiene carácter exclusivamente informativo y educativo. No constituye una tienda en línea ni una plataforma de contratación.</p>
 
-  <h3>2. Contenido</h3>
-  <p>El contenido se publica con fines generales. Las normas, especificaciones técnicas y recomendaciones pueden cambiar, por lo que se recomienda comprobar la información vigente en fuentes oficiales.</p>
+  <p>
+    Llantas Multi Colombia es un sitio web de contenido informativo
+    y educativo relacionado con llantas, neumáticos, mantenimiento
+    y seguridad vial.
+  </p>
 
-  <h3>3. Propiedad intelectual</h3>
-  <p>Los textos, elementos gráficos y diseño del sitio pertenecen a sus respectivos titulares o se utilizan con autorización cuando corresponda. No se autoriza su reproducción no permitida por la legislación aplicable.</p>
 
-  <h3>4. Enlaces externos</h3>
-  <p>Cuando existan enlaces hacia terceros, estos pueden estar sujetos a sus propias condiciones y políticas de privacidad.</p>
+  <h3>2. Actividad en línea</h3>
 
-  <h3>5. Responsabilidad</h3>
-  <p>La información general del sitio no sustituye la evaluación de un técnico, fabricante, autoridad competente o profesional especializado.</p>
+  <p>
+    El sitio funciona exclusivamente a través de Internet y no dispone
+    de establecimiento comercial, tienda física ni punto de atención
+    presencial.
+  </p>
 
-  <a href="#inicio" class="back-top">⬆ Volver al inicio</a>
+
+  <h3>3. Información publicada</h3>
+
+  <p>
+    La información publicada tiene carácter general. Las especificaciones
+    técnicas, recomendaciones y disposiciones legales pueden cambiar.
+    El visitante debe consultar fuentes oficiales, fabricantes o
+    profesionales cuando necesite información específica.
+  </p>
+
+
+  <h3>4. Responsabilidad</h3>
+
+  <p>
+    La información del sitio no sustituye la evaluación de un técnico,
+    fabricante, autoridad competente o profesional especializado.
+  </p>
+
+
+  <h3>5. Enlaces externos</h3>
+
+  <p>
+    En caso de existir enlaces hacia sitios de terceros, estos pueden
+    estar sujetos a sus propias condiciones de uso y políticas de
+    privacidad.
+  </p>
+
+
+  <h3>6. Propiedad intelectual</h3>
+
+  <p>
+    Los textos, elementos gráficos y diseño utilizados en este sitio
+    pertenecen a sus respectivos titulares o se utilizan conforme
+    a las autorizaciones correspondientes.
+  </p>
+
+
+  <a href="#inicio" class="back-top">
+    ⬆ Volver al inicio
+  </a>
+
 </section>
 
-<section id="garantia" class="legal-section">
-  <h2>🛡️ Garantía</h2>
-  <p><strong>Última actualización:</strong> 12 de agosto de 2026</p>
 
-  <div class="highlight"><strong>📌 Importante:</strong> Este sitio no comercializa llantas directamente. La información sobre garantías es únicamente general.</div>
-
-  <h3>1. Garantía de productos</h3>
-  <p>Las condiciones de garantía de una llanta dependen del fabricante, producto, vendedor y circunstancias de la compra. Revisa siempre los documentos entregados con el producto.</p>
-
-  <h3>2. Documentos recomendados</h3>
-  <ul>
-    <li>Factura o comprobante de compra.</li>
-    <li>Documento o certificado de garantía, cuando corresponda.</li>
-    <li>Soportes de instalación o servicios realizados.</li>
-  </ul>
-
-  <h3>3. Reclamos</h3>
-  <p>Ante un inconveniente, conserva los documentos de compra y contacta primero al establecimiento o fabricante según las condiciones de garantía aplicables.</p>
-
-  <a href="#inicio" class="back-top">⬆ Volver al inicio</a>
-</section>
-
-<section id="facturacion" class="legal-section">
-  <h2>🧾 Facturación</h2>
-  <p><strong>Última actualización:</strong> 12 de agosto de 2026</p>
-
-  <div class="highlight"><strong>📌 Este sitio es informativo:</strong> no realizamos ventas directas ni emitimos facturas por la información publicada.</div>
-
-  <h3>1. Facturación en Colombia</h3>
-  <p>Cuando una compra se realiza a través de un comercio, la documentación y facturación deben ajustarse a las obligaciones que correspondan al vendedor y a la normativa tributaria vigente.</p>
-
-  <h3>2. Información de la factura</h3>
-  <p>Los requisitos concretos pueden variar según el tipo de operación y el obligado a facturar. Para información actualizada, consulta directamente las disposiciones y canales oficiales de la <strong>DIAN</strong>.</p>
-
-  <h3>3. Conserva tus comprobantes</h3>
-  <ul>
-    <li>Sirven como respaldo de la compra.</li>
-    <li>Pueden ser necesarios para tramitar garantías.</li>
-    <li>Permiten identificar el producto y la fecha de adquisición.</li>
-  </ul>
-
-  <a href="#inicio" class="back-top">⬆ Volver al inicio</a>
-</section>
+<!-- COOKIES -->
 
 <section id="cookies" class="legal-section">
-  <h2>🍪 Aviso de Cookies</h2>
-  <p><strong>Última actualización:</strong> 12 de agosto de 2026</p>
+
+  <h2>🍪 Política de Cookies</h2>
+
+  <p>
+    <strong>Última actualización:</strong>
+    13 de agosto de 2026
+  </p>
+
 
   <h3>1. ¿Qué son las cookies?</h3>
-  <p>Son pequeños archivos que un sitio puede almacenar en el dispositivo del visitante para recordar determinadas preferencias o facilitar funciones técnicas.</p>
+
+  <p>
+    Las cookies son pequeños archivos o identificadores que pueden
+    utilizar los sitios web para almacenar información en el dispositivo
+    del visitante.
+  </p>
+
 
   <h3>2. Uso en este sitio</h3>
-  <p>El sitio puede utilizar almacenamiento local para recordar la elección realizada en el aviso de cookies. Si se incorporan herramientas de terceros, sus tecnologías pueden tener sus propias políticas.</p>
 
-  <h3>3. Gestión</h3>
-  <p>El visitante puede gestionar o eliminar cookies y datos de sitios desde las opciones de privacidad y seguridad de su navegador.</p>
+  <p>
+    Este sitio utiliza almacenamiento local del navegador para recordar
+    la elección realizada por el visitante respecto al aviso mostrado
+    sobre cookies y almacenamiento.
+  </p>
 
-  <div class="highlight"><strong>📌 Información:</strong> para consultas sobre privacidad y cookies, escribe a info@llantasmulticolombia.com</div>
-  <a href="#inicio" class="back-top">⬆ Volver al inicio</a>
+
+  <h3>3. Servicios de terceros</h3>
+
+  <p>
+    Si en el futuro se incorporan herramientas de terceros, como
+    analítica, publicidad u otras tecnologías, esta política deberá
+    actualizarse para reflejar las herramientas realmente utilizadas.
+  </p>
+
+
+  <h3>4. Gestión</h3>
+
+  <p>
+    El visitante puede gestionar o eliminar cookies y datos almacenados
+    desde las opciones de privacidad y seguridad de su navegador.
+  </p>
+
+
+  <div class="highlight">
+
+    <strong>📌 Consultas:</strong>
+
+    info@llantasmulticolombia.com
+
+  </div>
+
+
+  <a href="#inicio" class="back-top">
+    ⬆ Volver al inicio
+  </a>
+
 </section>
 
-<div class="footer">
-  <div><span style="font-weight:600">🇨🇴 LlantasMulti Colombia</span> &copy; 2026 - Contenido informativo</div>
-  <div>
-    <a href="#privacidad">Privacidad</a>
-    <a href="#terminos">Términos</a>
-    <a href="#garantia">Garantía</a>
-    <a href="#facturacion">Facturación</a>
-    <a href="#cookies">Cookies</a>
+
+<!-- CONTACTO -->
+
+<section id="contacto" class="legal-section">
+
+  <h2>📬 Contacto</h2>
+
+  <p>
+    Para consultas relacionadas con Llantas Multi Colombia y el
+    contenido publicado en este sitio, puedes utilizar el siguiente
+    canal digital:
+  </p>
+
+
+  <div class="contact-grid">
+
+    <div class="contact-item">
+
+      <strong>📧 Correo electrónico</strong>
+
+      info@llantasmulticolombia.com
+
+    </div>
+
+
+    <div class="contact-item">
+
+      <strong>🌐 Modalidad</strong>
+
+      Atención exclusivamente en línea
+
+    </div>
+
+
+    <div class="contact-item">
+
+      <strong>🇨🇴 País</strong>
+
+      Colombia
+
+    </div>
+
+
+    <div class="contact-item">
+
+      <strong>🏢 Establecimiento físico</strong>
+
+      No contamos con establecimiento
+      ni atención presencial.
+
+    </div>
+
   </div>
+
+
+  <div class="highlight">
+
+    <strong>📌 Importante:</strong>
+
+    El sitio opera exclusivamente por Internet. No se proporciona
+    una dirección física porque no existe un establecimiento de
+    atención presencial.
+
+  </div>
+
+</section>
+
+
+<!-- PIE DE PÁGINA -->
+
+<div class="footer">
+
+  <div>
+
+    <span style="font-weight:600">
+      🇨🇴 Llantas Multi Colombia
+    </span>
+
+    &copy; 2026
+
+  </div>
+
+
+  <div>
+
+    <a href="#nosotros">
+      Quiénes somos
+    </a>
+
+    <a href="#privacidad">
+      Privacidad
+    </a>
+
+    <a href="#terminos">
+      Términos
+    </a>
+
+    <a href="#cookies">
+      Cookies
+    </a>
+
+    <a href="#contacto">
+      Contacto
+    </a>
+
+  </div>
+
 </div>
 
-<div style="margin-top:1.2rem;font-size:.8rem;color:#3a5d7a;text-align:center;border-top:1px solid #e4ebf3;padding-top:1.2rem">
-  📋 Sitio informativo · Contenido general · Sin ventas directas
+
+<div style="
+  margin-top:1.2rem;
+  font-size:.8rem;
+  color:#3a5d7a;
+  text-align:center;
+  border-top:1px solid #e4ebf3;
+  padding-top:1.2rem;
+">
+
+  🇨🇴 Llantas Multi Colombia ·
+  Información general y educativa ·
+  Actividad exclusivamente en línea
+
 </div>
 
 </div>
+
+
+<!-- AVISO DE COOKIES -->
 
 <div id="cookieBanner" class="cookie-banner">
-  <p>🍪 Este sitio utiliza almacenamiento local para recordar tu preferencia sobre este aviso. Consulta nuestro <a href="#cookies">Aviso de Cookies</a>.</p>
-  <div style="display:flex;gap:.8rem;flex-wrap:wrap">
-    <button class="btn-cookie-reject" id="rejectCookies">Rechazar</button>
-    <button class="btn-cookie" id="acceptCookies">Aceptar</button>
+
+  <p>
+
+    Este sitio utiliza almacenamiento local para recordar tu
+    preferencia sobre este aviso.
+
+    Consulta nuestra
+    <a href="#cookies">
+      Política de Cookies
+    </a>.
+
+  </p>
+
+
+  <div class="cookie-buttons">
+
+    <button
+      class="btn-cookie-reject"
+      id="rejectCookies"
+      type="button">
+
+      Rechazar
+
+    </button>
+
+
+    <button
+      class="btn-cookie"
+      id="acceptCookies"
+      type="button">
+
+      Aceptar
+
+    </button>
+
   </div>
+
 </div>
 
-<script>
-(function(){
-  'use strict';
-  const banner=document.getElementById('cookieBanner');
-  const accept=document.getElementById('acceptCookies');
-  const reject=document.getElementById('rejectCookies');
 
-  function hide(){banner.style.display='none'}
-  function save(value){
-    try{localStorage.setItem('cookieConsent',value)}catch(e){}
-    hide();
+<script>
+
+(function(){
+
+  'use strict';
+
+  const banner =
+    document.getElementById('cookieBanner');
+
+  const accept =
+    document.getElementById('acceptCookies');
+
+  const reject =
+    document.getElementById('rejectCookies');
+
+
+  function hide(){
+
+    banner.style.display = 'none';
+
   }
 
+
+  function save(value){
+
+    try{
+
+      localStorage.setItem(
+        'cookieConsent',
+        value
+      );
+
+    }catch(e){}
+
+    hide();
+
+  }
+
+
   try{
-    const saved=localStorage.getItem('cookieConsent');
-    if(saved==='accepted'||saved==='rejected') hide();
+
+    const saved =
+      localStorage.getItem('cookieConsent');
+
+    if(
+      saved === 'accepted' ||
+      saved === 'rejected'
+    ){
+
+      hide();
+
+    }
+
   }catch(e){}
 
-  accept.addEventListener('click',()=>save('accepted'));
-  reject.addEventListener('click',()=>save('rejected'));
+
+  accept.addEventListener(
+    'click',
+    function(){
+
+      save('accepted');
+
+    }
+  );
+
+
+  reject.addEventListener(
+    'click',
+    function(){
+
+      save('rejected');
+
+    }
+  );
+
 })();
+
 </script>
+
 </body>
 </html>
